@@ -4,47 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "8a48dfe9937a56ce",
+        "id": "02acdc78b23339a3",
         "type": "tabs",
         "children": [
           {
-            "id": "40cd80638fed07bd",
+            "id": "0261e60ff3aeac12",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md"
+                "file": "Imbalanced Datasets.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-12-10 23.45.52.excalidraw"
-            }
-          },
-          {
-            "id": "9985d7ebe1e89eb3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.6"
-            }
-          },
-          {
-            "id": "ff90c7bbf717cfb7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-12-10 23.46.39.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-12-10 23.46.39.excalidraw"
+              "icon": "lucide-file",
+              "title": "Imbalanced Datasets"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,23 +193,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ff90c7bbf717cfb7",
+  "active": "0261e60ff3aeac12",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-12-10 23.46.39.excalidraw.md",
+    "Classification Metrics.md",
+    "Bias in Machine Learning.md",
+    "Data preparation/Data Imputation.md",
+    "Data preparation/Captura de pantalla 2025-12-10 a las 13.30.51.png",
+    "Untitled.canvas",
+    "Excalidraw/Drawing 2025-12-11 00.00.03.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-11 00.00.02.excalidraw.md",
     "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-10 23.46.39.excalidraw.md",
+    "Untitled.base",
+    "Excalidraw/Drawing 2025-12-10 23.59.35.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-10 23.59.30.excalidraw.md",
     "Excalidraw",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "Data preparation/Data Imputation.md",
-    "Bias in Machine Learning.md",
-    "Classification Metrics.md",
     "Imbalanced Datasets.md",
     "Selection Bias.md",
     "Linear Models.md",
     "Tree-based Models.md",
     "Selection Models.md",
     "PR-AUC.md",
-    "Data preparation/Captura de pantalla 2025-12-10 a las 13.30.51.png",
     "Tree-Based Models[Decision Trees.md",
     "Decision Trees.md",
     "Euclidean Distance.md",
@@ -245,10 +227,6 @@
     "Untitled/Data standarization.md",
     "Untitled/Pasted image 20251014170229.png",
     "Untitled/Pasted image 20251014170206.png",
-    "Untitled/Integración AzureML en Azure Synapse.md",
-    "Untitled/acceso astara.md",
-    "MLOps.md",
-    "Welcome.md",
-    "create a link.md"
+    "Untitled/Integración AzureML en Azure Synapse.md"
   ]
 }
