@@ -11,9 +11,10 @@ At each node, the algorithm searches for the tuple $\theta = (j, t_m)$ (feature 
 >
 > | Criterion | Task | Formula | Logic |
 > | :--- | :--- | :--- | :--- |
-> | **Gini Impurity** | Classification | $G = 1 - \sum_{k=1}^{C} p_k^2$ | Measures probability of misclassification. **0 = Pure Node**. Computationally fast. |
-> | **Entropy** | Classification | $H = - \sum_{k=1}^{C} p_k \log_2(p_k)$ | Measures "disorder" (Shannon Info Theory). Tends to create more balanced trees. |
-> | **Variance** | Regression | $\text{MSE} = \sum (y_i - \bar{y})^2$ | Minimizes the squared error within the leaf node. |
+> | **Gini Impurity** | Classification | $G = 1 - \sum_{k=1}^{C} p_k^2$ | Measures probability of misclassification. **0 = Pure Node**. <br>👉 **Eval:** **[[Classification Metrics]]** |
+> | **Entropy** | Classification | $H = - \sum_{k=1}^{C} p_k \log_2(p_k)$ | Measures "disorder". Tends to create more balanced trees. <br>👉 **Eval:** **[[Classification Metrics]]** |
+> | **Variance** | Regression | $\text{MSE} = \sum (y_i - \bar{y})^2$ | Minimizes the squared error within the leaf node. <br>👉 **Eval:** **[[Regression Metrics]]** |
+
 
 ---
 

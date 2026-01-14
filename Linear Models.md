@@ -26,6 +26,7 @@ The difference between Regression and Classification is purely mathematical: the
 *   **Cost Function:** **Mean Squared Error (MSE)**.
 $$ J(\mathbf{w}) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2 $$
 *   **Why Squared?** It makes the error surface **Convex** (bowl-shaped), guaranteeing a global minimum.
+* **The metrics for regression can be found here** -> [[Regression metrics]]
 
 ### B. Logistic Regression (Binary Classification)
 *   **Activation:** Wraps the linear equation in a **Sigmoid** function to squash output to $[0,1]$.
@@ -33,6 +34,7 @@ $$ \sigma(z) = \frac{1}{1 + e^{-z}} $$
 *   **Cost Function:** **Log-Loss (Binary Cross-Entropy)**.
 $$ J(\mathbf{w}) = - \frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(\hat{y}^{(i)}) + (1-y^{(i)}) \log(1-\hat{y}^{(i)})] $$
 *   **Why not MSE?** If we used MSE with Sigmoid, the function would be "wavy" (non-convex), causing Gradient Descent to get stuck in local minima.
+* **The metrics for classification can be found here** -> [[Classification Metrics]]
 
 ---
 

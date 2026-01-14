@@ -26,9 +26,9 @@ During WWII, the military looked at planes coming back from battle to see where 
 This is where **[[Data Imputation]]** becomes dangerous.
 
 > [!WARNING] The `dropna()` Trap
-> When you use **Listwise Deletion** (Dropping rows with nulls), you assume the data is **[[MCAR]]** (Missing Completely At Random).
+> When you use **Listwise Deletion** (Dropping rows with nulls), you assume the data is **[[Types of Missing Data|MCAR]]** (Missing Completely At Random).
 >
-> If the data is **[[MNAR]]** (Missing Not At Random), dropping these rows creates Selection Bias.
+> If the data is **[[Types of Missing Data|MNAR]]** (Missing Not At Random), dropping these rows creates Selection Bias.
 > *   *Example:* Dropping rows where `Income` is null. If rich people tend to hide their income, your dataset now represents a poorer population than reality.
 
 ---
