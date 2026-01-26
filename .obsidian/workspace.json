@@ -4,51 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "02acdc78b23339a3",
+        "id": "cb3fe8e127c42f2a",
         "type": "tabs",
         "children": [
           {
-            "id": "0261e60ff3aeac12",
+            "id": "5d0bfd2f37354962",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Models.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Linear Models"
-            }
-          },
-          {
-            "id": "aeaf87d6a29e62b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Language Models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Language Models"
-            }
-          },
-          {
-            "id": "e0fecc3eac655efe",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,17 +189,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e0fecc3eac655efe",
+  "active": "5d0bfd2f37354962",
   "lastOpenFiles": [
-    "Imbalanced Datasets.md",
+    "Language Models.md",
     "Linear Models.md",
+    "Imbalanced Datasets.md",
     "Neural Networks.md",
     "Regression metrics.md",
     "Selection Bias.md",
     "Spark ML Estimators vs Transformers.md",
     "Types of Missing Data.md",
     "Tree-based Models.md",
-    "Language Models.md",
     "Captura de pantalla 2025-12-29 a las 23.40.54.png",
     "Bias in Machine Learning.md",
     "Data preparation and feature engineering/Data Encoding.md",
