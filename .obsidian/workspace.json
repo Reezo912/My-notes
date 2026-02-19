@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "49fb191fcde7bfdd",
+        "id": "cb3fe8e127c42f2a",
         "type": "tabs",
         "children": [
           {
-            "id": "ea4371059b235d14",
+            "id": "5d0bfd2f37354962",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -61,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Buscar"
+              "title": "Search"
             }
           },
           {
@@ -157,8 +157,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -180,61 +180,57 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "templater-obsidian:Templater": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ea4371059b235d14",
+  "active": "5d0bfd2f37354962",
   "lastOpenFiles": [
+    "Selection Bias.md",
+    "Spark ML Estimators vs Transformers.md",
+    "Tree-based Models.md",
+    "Types of Missing Data.md",
+    "Classification Metrics.md",
+    "Imbalanced Datasets.md",
+    "RAG (Retrieval Augmented Generation).md",
+    "Bias in Machine Learning.md",
+    "Captura de pantalla 2025-12-29 a las 23.40.54.png",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "Untitled 3.canvas",
     "Neural Networks.md",
     "Linear Models.md",
     "Language Models.md",
-    "Classification Metrics.md",
     "Categorical Data.md",
-    "Imbalanced Datasets.md",
-    "RAG (Retrieval Augmented Generation).md",
-    "Types of Missing Data.md",
-    "Regression metrics.md",
-    "Selection Bias.md",
-    "Tree-based Models.md",
-    "Captura de pantalla 2025-12-29 a las 23.40.54.png",
-    "Bias in Machine Learning.md",
+    "2026-02-19.md",
     "images/Captura de pantalla 2025-12-17 a las 13.23.12.png",
-    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png",
-    "images",
-    "Spark ML Estimators vs Transformers.md",
-    "Data preparation and feature engineering/Data Standardization.md",
-    "Data preparation and feature engineering/Data Imputation.md",
+    "Regression metrics.md",
     "Data preparation and feature engineering/Data Encoding.md",
+    "Data preparation and feature engineering/Data Standardization.md",
+    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png",
+    "Data preparation and feature engineering/Data Imputation.md",
+    "Handling Missing Data.md",
     "Data preparation and feature engineering",
-    "Data preparation/Data Imputation.md",
-    "Data preparation/Captura de pantalla 2025-12-10 a las 13.30.51.png",
-    "Data preparation",
-    "2026-02-18.md",
-    "Sin título 1.canvas",
-    "Normal Distribution.md",
-    "Captura de pantalla 2025-12-10 a las 13.30.51.png",
-    "Excalidraw/Drawing 2026-02-18 22.53.38.excalidraw.md",
-    "Sin título.base",
-    "Sin título.canvas",
-    "Data Imputation.md",
-    "Excalidraw",
+    "Outliers.md",
+    "Random Forest.md",
     "Excalidraw/Drawing 2025-12-11 00.16.17.excalidraw.md",
-    "Untitled.canvas",
+    "Excalidraw",
     "Excalidraw/Drawing 2025-12-11 00.00.03.excalidraw.md",
     "Excalidraw/Drawing 2025-12-11 00.00.02.excalidraw.md",
     "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-10 23.46.39.excalidraw.md",
     "Untitled.base",
-    "Untitled 1.canvas",
+    "images",
     "Untitled/Pasted image 20251014170229.png",
     "Untitled/Pasted image 20251014170206.png"
   ]

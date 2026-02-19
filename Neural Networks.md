@@ -118,4 +118,4 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 # 3. Fit
 model.fit(X_train, y_train, epochs=150, batch_size=10)
-`
+```

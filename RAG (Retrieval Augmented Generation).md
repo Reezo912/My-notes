@@ -29,3 +29,33 @@ If we use keywords to find relevant documents, a pretty straight forward approac
 Two common term-based retrieval solutions are **ElasticSearch** and **BM25**.
 	- **ElasticSearch**: uses a data structure called an inverted index. It's a dictionary that maps from terms to documents that contain them.
 	- **BM25**: normalizes term frequency scores by document length. Longer documents are most likely to contain a given term and have a  higher term frequency values.
+
+#### Embedding-Based Retrieval
+They aim to rank documents based on how closely their meanings align with the query, also called **Semantic Retrieval**.
+Here indexing has an extra function: convert the original data chunks into embeddings. The database where this embeddings are stored is called a *vector database*. 
+Querying has the following steps:
+	1. Embedding model: converts the query into embeddings using the same embedding model used in the indexing.
+	2. **Retriever**: Fetch k-data chunks whose embeddings are closest to the query embedding. The number of data chunks to fetch, k, depends on the *use case*, the *generative model* and the *query*
+
+
+To search in this vector databases, we use vector search. In small databases it is framed as a **K-Nearest Neighbours (K-NN)**, however in large databases its is tipically done using **Approximate Nearest Neighbours (ANN)**. The following are the most important of them:
+	- **LSH (Locality-Sensitive hashing)**: Involves hashing similar vectors into the same buckets for speed up similarity search, it trades accuracy for efficiency.
+	- **HNSW (Hierarchical Navigable Small World)**: multi-layer graph where nodes represent vectors and the edges connect similar vectors, allowing nearest-neighbour searches by traversing graph edges.
+	- **Product Quantization**: reduces each vector into much simpler, lower-dimensional representation by decomposing each vector into multiple subvectors. Distances are computed using the lower-dimensional representations.
+	- **IVF (Inverted File Index)**: uses K-Means clustering to organize similar vectors into the same cluster. The number of clusters is tipically set up so that there are between 100 and 10.000 vectors per cluster. **IVF** finds cluster centroids closest to the query embedding, vector in this clusters become candidate neighbours.
+	- **Annoy (Approximate Nearest Neighbours Oh Yeah)**: Builds binary trees, each tree splits the vectors into clusters randomly. During search, it traverses these trees to gather candidate neighbours.
+
+### Comparing both approaches
+
+>[!INFO] **Term-based retrieval**: it's generally faster and works well out of the box. However it's simplicity also mean there is less components you can tweak to improve performance.
+
+>[!INFO] **Embedding-based retrieval**: can be improved to outperform term-based retrieval. It is posible to finetune the embedding model and the retriever, either separately, or in conjunction with the generative model. However, converting data into embeddings can obscure keywords. This limitation can be adressed by combining embedding-based retrieval with term-based retrieval.
+
+Two metrics often used by RAG evaluation frameworks are ***context precision*** and ***context recall***
+- Context precision: out of all documents retrieved, what percentage is relevant to the query?
+- Context recall: out of all the documents that are relevant to the query, what percentage is retrieved?
+
+### Retrieval optimization
+
+#### Chunking strategy
+
