@@ -6,5 +6,6 @@
   "obsidian-tasks-plugin",
   "quickadd",
   "obsidian-outliner",
-  "editing-toolbar"
+  "editing-toolbar",
+  "dataview"
 ]

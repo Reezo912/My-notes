@@ -1,0 +1,17 @@
+.markdown-rendered .mermaid,
+.markdown-preview-view .mermaid,
+.markdown-source-view.mod-cm6 .cm-embed-block .mermaid {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
+}
+
+.markdown-rendered .mermaid svg,
+.markdown-preview-view .mermaid svg,
+.markdown-source-view.mod-cm6 .cm-embed-block .mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

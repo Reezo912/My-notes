@@ -1,5 +1,8 @@
 {
   "accentColor": "",
+  "enabledCssSnippets": [
+    "mermaid-sizing"
+  ],
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
   "theme": "moonstone",
   "cssTheme": ""

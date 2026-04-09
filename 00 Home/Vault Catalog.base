@@ -1,0 +1,54 @@
+filters:
+  and:
+    - file.ext == "md"
+    - type
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  domain:
+    displayName: Domain
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  audience:
+    displayName: Audience
+  last_reviewed:
+    displayName: Last Reviewed
+views:
+  - type: table
+    name: By Domain
+    groupBy:
+      property: domain
+      direction: ASC
+    order:
+      - domain
+      - type
+      - file.name
+      - file.folder
+  - type: table
+    name: By Type
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - type
+      - domain
+      - file.name
+  - type: table
+    name: Review Queue
+    order:
+      - last_reviewed
+      - domain
+      - file.name
+  - type: table
+    name: By Status
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - domain
+      - file.name

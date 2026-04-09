@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RAG (Retrieval Augmented Generation).md",
+                "file": "00 Home/Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RAG (Retrieval Augmented Generation)"
+              "title": "Home"
             }
           }
         ]
@@ -41,10 +41,10 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 320
   },
   "right": {
     "id": "db280b14008b81d7",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
+                "file": "00 Home/Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Drawing 2025-12-10 23.45.52.excalidraw"
+              "title": "Enlaces entrantes de Home"
             }
           },
           {
@@ -113,16 +113,45 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
+                "file": "00 Home/Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Drawing 2025-12-10 23.45.52.excalidraw"
+              "title": "Enlaces salientes de Home"
             }
           },
           {
-            "id": "4f8335ee737ea085",
+            "id": "6e4e0bd6b3859d0b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00 Home/Home.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Home"
+            }
+          },
+          {
+            "id": "e72ee06a8ebcaba6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "06a0e9792019a748",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,36 +162,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
-            "id": "6e4e0bd6b3859d0b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Drawing 2025-12-10 23.45.52.excalidraw"
-            }
-          },
-          {
-            "id": "e64038fb0aec6498",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "5656ecf402285151",
+            "id": "4b2e94b0bccceebb",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -180,13 +184,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "templater-obsidian:Templater": false,
@@ -195,43 +199,25 @@
   },
   "active": "5d0bfd2f37354962",
   "lastOpenFiles": [
-    "Selection Bias.md",
-    "Spark ML Estimators vs Transformers.md",
-    "Tree-based Models.md",
-    "Types of Missing Data.md",
-    "Classification Metrics.md",
-    "Imbalanced Datasets.md",
-    "RAG (Retrieval Augmented Generation).md",
-    "Bias in Machine Learning.md",
-    "Captura de pantalla 2025-12-29 a las 23.40.54.png",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "Untitled 2.canvas",
-    "Untitled 3.canvas",
-    "Neural Networks.md",
-    "Linear Models.md",
-    "Language Models.md",
-    "Categorical Data.md",
-    "2026-02-19.md",
-    "images/Captura de pantalla 2025-12-17 a las 13.23.12.png",
-    "Regression metrics.md",
-    "Data preparation and feature engineering/Data Encoding.md",
-    "Data preparation and feature engineering/Data Standardization.md",
-    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png",
-    "Data preparation and feature engineering/Data Imputation.md",
-    "Handling Missing Data.md",
-    "Data preparation and feature engineering",
-    "Outliers.md",
-    "Random Forest.md",
-    "Excalidraw/Drawing 2025-12-11 00.16.17.excalidraw.md",
-    "Excalidraw",
-    "Excalidraw/Drawing 2025-12-11 00.00.03.excalidraw.md",
-    "Excalidraw/Drawing 2025-12-11 00.00.02.excalidraw.md",
-    "Excalidraw/Drawing 2025-12-10 23.45.52.excalidraw.md",
-    "Excalidraw/Drawing 2025-12-10 23.46.39.excalidraw.md",
-    "Untitled.base",
-    "images",
-    "Untitled/Pasted image 20251014170229.png",
-    "Untitled/Pasted image 20251014170206.png"
+    "00 Home/Vault Dashboard.md",
+    "00 Home/Vault Catalog.base",
+    "00 Home/Home.md",
+    "00 Home/Deep Learning & NLP Index.md",
+    "00 Home/Data Preparation Index.md",
+    "AGENTS.md",
+    "90 Guides/Note Style Guide.md",
+    "90 Guides/Editorial Review.base",
+    "90 Guides/Editorial Dashboard.md",
+    "00 Home/Agentic Systems Index.md",
+    "00 Home/Machine Learning Index.md",
+    "05 Agentic Systems/Agentic Systems Sources and Research Log.md",
+    "05 Agentic Systems/Agent Architectures and Orchestration Patterns.md",
+    "05 Agentic Systems/When to Use Agentic Systems.md",
+    "05 Agentic Systems/AI Agents.md",
+    "05 Agentic Systems/Tool Use and Environment Interaction.md",
+    "05 Agentic Systems/Planning and Control Flow in Agent Systems.md",
+    "05 Agentic Systems/Memory in Agent Systems.md",
+    "05 Agentic Systems/Multi-Agent Systems.md",
+    "05 Agentic Systems/Evaluation, Observability, and Governance for Agent Systems.md"
   ]
 }

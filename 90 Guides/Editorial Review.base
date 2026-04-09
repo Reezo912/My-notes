@@ -1,0 +1,58 @@
+filters:
+  and:
+    - file.ext == "md"
+    - type
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  domain:
+    displayName: Domain
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  audience:
+    displayName: Audience
+  last_reviewed:
+    displayName: Last Reviewed
+views:
+  - type: table
+    name: Review Queue
+    order:
+      - last_reviewed
+      - domain
+      - type
+      - file.name
+  - type: table
+    name: Bridge Notes
+    filters: type == "bridge"
+    groupBy:
+      property: domain
+      direction: ASC
+    order:
+      - domain
+      - file.name
+  - type: table
+    name: By Status
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - status
+      - last_reviewed
+      - file.name
+  - type: table
+    name: Guides And Indexes
+    filters:
+      or:
+        - type == "guide"
+        - type == "index"
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - type
+      - domain
+      - file.name
