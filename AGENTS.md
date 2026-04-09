@@ -22,7 +22,9 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - `90 Guides`
   - `99 Archive`
 - Keep the root almost empty. Leave `AGENTS.md`, `.obsidian`, and `images` at root; place notes inside the domain folders.
+- `README.md` and localized publication files such as `README.es.md` are allowed at root as GitHub-facing onboarding documents for the vault.
 - Ensure all canonical notes, including new notes and migrated or normalized existing notes, use frontmatter with at least: `type`, `domain`, `audience`, `status`, and `last_reviewed`.
+- Treat `README.md` and localized publication files as repository documentation, not as canonical vault notes. They do not need note frontmatter.
 - Update `Note Style Guide.md` first whenever the authoring rules change.
 - After updating the style guide, sync the summary in this file so agents keep the short operational contract current.
 

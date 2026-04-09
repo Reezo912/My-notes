@@ -33,8 +33,13 @@ This vault is a shared AI and ML knowledge base designed to work in two modes:
 - `90 Guides`: shared documentation like this guide
 - `99 Archive`: deprecated or replaced notes only
 
+Repository-facing publication files such as `README.md` and localized variants like `README.es.md` are allowed at root, but they are not canonical vault notes.
+
 ## Metadata Rules
 Use frontmatter on canonical notes.
+
+Exception:
+- `README.md` and localized publication files are GitHub-facing repository documentation and do not need canonical note frontmatter.
 
 Minimum fields:
 ```yaml
