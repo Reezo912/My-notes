@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # AGENTS.md
 
@@ -21,6 +21,12 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - `05 Agentic Systems`
   - `90 Guides`
   - `99 Archive`
+- Large branches may introduce numbered subfolders when a flat layout stops scaling. Current example inside `05 Agentic Systems`:
+  - `00 Core`
+  - `10 Software Engineering Agents`
+  - `20 Applied Agentic Architectures`
+  - `90 Research and Roadmap`
+- Notes inside those subfolders may also use zero-padded numeric filename prefixes such as `010`, `020`, and `030` to expose reading order in the Obsidian explorer. Keep the note title clean and preserve the old unnumbered name as an `aliases` entry when renaming an existing note.
 - Keep the root almost empty. Leave `AGENTS.md`, `.obsidian`, and `images` at root; place notes inside the domain folders.
 - `README.md` and localized publication files such as `README.es.md` are allowed at root as GitHub-facing onboarding documents for the vault.
 - Ensure all canonical notes, including new notes and migrated or normalized existing notes, use frontmatter with at least: `type`, `domain`, `audience`, `status`, and `last_reviewed`.
@@ -42,6 +48,7 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
 - Keep Mermaid diagrams vertical when labels are long and avoid page-level horizontal scrolling.
 - Treat frontmatter as the canonical metadata layer. Keep `type`, `domain`, `audience`, `status`, and `last_reviewed` accurate whenever notes are created, promoted, moved, or materially rewritten.
 - Keep `00 Home/Home.md` and the four top-level indexes as the main navigation system. Dashboards and Bases support this layer, but should not replace it.
+- Treat subfolders inside a branch as maintenance support, not as the primary learning path. Readers should still enter through `Home.md`, the branch index, and the track hubs.
 
 ## Required Visual Rules
 - Substantive notes should usually have 3 to 5 meaningful callouts.
@@ -70,6 +77,8 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
 - Keep learning progression coherent across the vault:
   - foundations -> data preparation -> classical ML -> deep learning and NLP -> agentic systems
 - Treat `RAG` as useful context for agentic systems, not a universal prerequisite.
+- When a branch grows internal tracks, update the branch index to show both the study path and the folder map in the same change.
+- When a note uses `Apprenticeship / Advanced / Mastery` tables, make it explicit whether the stages are self-contained or assume the shared branch core. If the track depends on the core, surface the handoff notes directly in the same note.
 
 ## Validation And Review
 - Agents may deploy sub-agents at their own discretion for research, validation, review, and multi-perspective analysis inside this vault workflow.
@@ -80,8 +89,17 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - use one agent for research when recency or breadth matters
   - use one or more agents for review when a note, branch, or structure change affects multiple audiences
   - skip sub-agent deployment for trivial typo fixes or very small local edits
+- Multi-agent operating defaults:
+  - `single-agent` is the default for small local edits
+  - use multi-agent workflows for recency-sensitive research, multi-audience review, structure or link validation, and large branch changes
+  - recommended role patterns are `research/source agent`, `audience/editorial reviewer`, `structure/link validator`, and `domain specialist`
+  - only one writing agent should own a given file or path scope at a time; review agents should stay read-only by default
+  - the principal agent integrates final changes, summarizes validation conclusions, and closes sub-agents when the work is complete
 - For material changes to navigation, dashboards, Mermaid behavior, or workspace setup, prefer a real Obsidian-facing QA pass in addition to file-level validation when feasible.
 - After validation, summarize the conclusions and close review sub-agents when they are no longer needed.
 
 ## Maintenance Rule
 - When new note-writing conventions are introduced, record them in `Note Style Guide.md` with a dated changelog entry.
+
+## Last Reviewed
+- 2026-04-18

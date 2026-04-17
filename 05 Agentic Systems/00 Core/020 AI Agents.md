@@ -5,6 +5,8 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - AI Agents
 status: evergreen
 last_reviewed: 2026-04-10
 ---

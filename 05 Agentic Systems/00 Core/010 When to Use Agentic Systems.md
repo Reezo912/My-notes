@@ -5,8 +5,10 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - When to Use Agentic Systems
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # When to Use Agentic Systems
 
@@ -47,11 +49,12 @@ Agentic systems are usually justified when several of these conditions are true:
 | Multi-agent | orchestrator plus specialists | supervisor, verifier, or aggregator declares completion | shared plus role-local state | orchestrator, policy layer, and human review |
 
 ### Go / No-Go Decision Block
-| Decision Lens | Move To A True Agent When | Stay With Workflow Or Bounded Tool Use When |
-| :--- | :--- | :--- |
-| Control complexity | the next step depends on observations and cannot be pre-scripted reliably | the path is stable enough to encode directly |
-| Economic value | adaptive behavior saves material analyst time, reduces rework, or improves recovery on variable inputs | latency and ops cost would exceed the expected value |
-| Governance readiness | you can deploy traces, task-level evals, and approval gates before rollout | failures would not be auditable or safely interruptible |
+| Decision Lens | Move To A True Agent When | Stay With Workflow Or Bounded Tool Use When | What To Measure |
+| :--- | :--- | :--- | :--- |
+| Control complexity | the next step depends on observations and cannot be pre-scripted reliably | the path is stable enough to encode directly | branch count, exception rate, manual handoffs |
+| Economic value | adaptive behavior saves material analyst time, reduces rework, or improves recovery on variable inputs | latency and ops cost would exceed the expected value | minutes saved per task, recovery rate, cost per successful task |
+| Governance readiness | you can deploy traces, task-level evals, and approval gates before rollout | failures would not be auditable or safely interruptible | audit coverage, approval rate, rollback time |
+| Adoption scale | the same loop or tool stack will be reused across teams or workflows | the use case is one-off or likely to be replaced quickly | number of downstream use cases, connector reuse, maintenance load |
 
 ```mermaid
 flowchart TD
@@ -66,6 +69,8 @@ flowchart TD
 
 > [!IMPORTANT] Start with the minimum viable architecture
 > Current official guidance from both OpenAI and Anthropic converges on the same rule: begin with the simplest loop that solves the task, then add complexity only when the evals justify it.
+
+If the task clears the conceptual bar for agentic design but the business case is still uncertain, continue to [[Economic and ROI Analysis for Agentic Systems]] before moving into a larger architecture proposal.
 
 ## Design Patterns and Failure Modes
 ### Strong use cases
@@ -95,14 +100,15 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[Language Models]], [[RAG (Retrieval Augmented Generation)]]
-- Related: [[AI Agents]], [[Agent Architectures and Orchestration Patterns]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[Economic and ROI Analysis for Agentic Systems]], [[AI Agents]], [[Agent Architectures and Orchestration Patterns]], [[Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
 - [OpenAI, "New tools for building agents" (2025-03-11)](https://openai.com/index/new-tools-for-building-agents/)
+- [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [A Survey on Large Language Model based Autonomous Agents (2024)](https://arxiv.org/abs/2308.11432)
 - [Large Language Model based Multi-Agents: A Survey of Progress and Challenges (2024)](https://arxiv.org/abs/2402.01680)
 - See [[Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-18

@@ -5,6 +5,8 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - Evaluation, Observability, and Governance for Agent Systems
 status: evergreen
 last_reviewed: 2026-04-10
 ---

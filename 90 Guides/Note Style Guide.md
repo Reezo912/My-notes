@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # Note Style Guide
 
@@ -32,6 +32,16 @@ This vault is a shared AI and ML knowledge base designed to work in two modes:
 - `05 Agentic Systems`: agents, orchestration, evaluation, and research log notes
 - `90 Guides`: shared documentation like this guide
 - `99 Archive`: deprecated or replaced notes only
+
+Large branches may introduce numbered subfolders when a flat folder stops being easy to maintain. The folder hierarchy should still support the index layer rather than replacing it.
+
+Current example:
+- `05 Agentic Systems/00 Core`
+- `05 Agentic Systems/10 Software Engineering Agents`
+- `05 Agentic Systems/20 Applied Agentic Architectures`
+- `05 Agentic Systems/90 Research and Roadmap`
+
+Within those subfolders, notes may use zero-padded numeric filename prefixes such as `010`, `020`, and `030` to make reading order visible in Obsidian's file explorer. Keep the `# Title` clean and add an `aliases` entry with the unnumbered note name so existing wikilinks remain stable.
 
 Repository-facing publication files such as `README.md` and localized variants like `README.es.md` are allowed at root, but they are not canonical vault notes.
 
@@ -78,6 +88,7 @@ Rules:
 - If note classes, domains, or review fields change, update the dashboard layer in the same change.
 - Prefer Bases for stable grouped views by `domain`, `type`, `status`, and `last_reviewed`.
 - Prefer Dataview for review debt, missing-section checks, and editorial maintenance.
+- Do not rely on folder paths as the primary curriculum. Use folder structure for maintainability and use indexes for the human learning path.
 
 ## Required Structure For Substantive Notes
 Substantive notes should usually follow this order:
@@ -157,6 +168,8 @@ Rules:
 - Keep a short `Where This Leads` or `Read Next` block in each major index.
 - Let `Home.md` act as the global portal and each index act as a branch-specific guide.
 - Treat `RAG` as useful context before agentic systems, not as a mandatory gate for first-pass learning.
+- When a branch grows into multiple internal tracks, keep the branch index responsible for exposing both the conceptual track map and the physical folder map.
+- When a note uses `Apprenticeship / Advanced / Mastery` tables, state whether the table is self-contained or assumes the shared branch core. If it assumes the core, list the core handoff notes immediately before or inside the table.
 
 ## Validation Workflow
 - Agents may deploy sub-agents proactively when research, verification, or multi-perspective review materially improves the note or structure change.
@@ -170,6 +183,30 @@ Rules:
 - Add a live Obsidian-facing QA pass when the change materially affects navigation, dashboards, Mermaid sizing, or workspace ergonomics.
 - Skip sub-agent deployment for trivial fixes that do not benefit from extra review.
 - After validation, summarize the conclusions and close review agents that are no longer needed.
+
+## Multi-Agent Operating Contract
+- Default to `single-agent` execution for small local changes, narrow note edits, and low-risk maintenance work.
+- Prefer multi-agent work when the task benefits from:
+  - recency-sensitive research
+  - broad source review
+  - multi-audience editorial review
+  - structure, link, or navigation validation
+  - large branch expansions or migrations
+- Recommended role patterns for this vault:
+  - `research/source agent`
+  - `audience/editorial reviewer`
+  - `structure/link validator`
+  - `domain specialist`
+- Ownership rules:
+  - only one writing agent should own a given file or path scope at a time
+  - review agents should stay read-only by default
+  - the principal agent is responsible for integrating outputs, resolving conflicts, and preserving the canonical editorial voice
+- Validation rules:
+  - substantial changes should include at least one explicit validation pass
+  - high-impact changes should usually include multi-perspective review
+  - navigation, dashboard, workspace, or large Mermaid changes should include real Obsidian QA when feasible
+- Closure rule:
+  - summarize what each review or research pass concluded and close sub-agents once they are no longer needed
 
 ## Source And Citation Rules
 - Use a `Source` section when the note is meaningfully derived from a book, paper, or canonical technical source.
@@ -230,6 +267,11 @@ Use **compact** for:
 ## Style Change Log
 | Date | Change | Rationale |
 | :--- | :--- | :--- |
+| 2026-04-18 | Formalized the multi-agent operating contract for this vault, including default role patterns, ownership rules, validation expectations, and closure rules. | Make multi-agent work explicit and safe for large content, navigation, and research changes without turning every task into ad hoc coordination. |
+| 2026-04-18 | Allowed numbered subfolders inside large branches, formalized track-based organization within `05 Agentic Systems`, and clarified that indexes remain the primary navigation layer over physical folders. | Support deeper curriculum branches without letting a flat file layout or raw folder browsing become the main study path. |
 | 2026-04-10 | Promoted older bridge notes into substantive notes, added Bases and Dataview dashboards, formalized curriculum blocks in major indexes, and required live Obsidian QA for navigation-heavy changes. | Bring the vault to a scaling checkpoint where content quality, metadata browsing, curriculum design, and visual QA all reinforce each other. |
 | 2026-04-10 | Moved the vault to a domain-folder structure, added frontmatter metadata rules, and formalized proactive sub-agent validation as part of the vault workflow. | Improve physical navigation, make classification explicit, and let AI agents validate research and structure changes without waiting for repeated user prompts. |
 | 2026-04-09 | Moved the vault to a high-visual authoring system for substantive and index notes; kept micro bridge notes compact; added Mermaid sizing policy and vertical-diagram preference. | Improve scanability in Obsidian while avoiding horizontal page scrolling and keeping bridge notes lightweight. |
+
+## Last Reviewed
+- 2026-04-18

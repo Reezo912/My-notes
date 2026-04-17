@@ -5,8 +5,10 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - Tool Use and Environment Interaction
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # Tool Use and Environment Interaction
 
@@ -23,12 +25,14 @@ Without tools, an agent is mostly limited to reasoning over its context window. 
 | :--- | :--- | :--- | :--- |
 | Built-in tools | common agent actions | fastest time to value with strong defaults | platform dependence |
 | Custom function tools | domain-specific actions | highest ROI when tools map to stable business operations | schema, permissions, and maintenance burden |
-| MCP / connector-style integrations | many external systems | reuse and interoperability across teams or platforms | approval, trust, and boundary complexity |
+| MCP / app-style integrations | many external systems | reuse and interoperability across teams or platforms | approval, trust, and boundary complexity |
 
 > [!IMPORTANT] Tool quality is an architecture issue
 > If tools are ambiguous, under-specified, or overly broad, the model has to guess too much. That usually looks like intelligence failure but is often interface failure.
 
 A connector is a reusable adapter that exposes an external system through a standard interface, so the agent does not need a bespoke integration pattern for every target system.
+
+When APIs are missing or too fragmented, tool use can extend into browser or desktop surfaces through computer-use models. That expands reach, but it also shifts the system toward a riskier and more fragile operating envelope. See [[Computer Use and GUI Agents]].
 
 ## Technical Core
 ### Minimal Interaction Loop
@@ -56,7 +60,7 @@ flowchart TD
 - keep the tool catalog small and well documented
 - separate read tools from write or high-impact tools
 - require approval for privileged or irreversible actions
-- use MCP / connectors as examples of reusable interoperability rather than as the whole conceptual model
+- use MCP or app-style integrations as examples of reusable interoperability rather than as the whole conceptual model
 
 ### Failure modes
 - wrong tool selected
@@ -73,15 +77,16 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[AI Agents]]
-- Related: [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]], [[Agent Architectures and Orchestration Patterns]]
+- Related: [[MCP and Connector Protocols]], [[Tool Ecosystems and Harness Engineering]], [[Computer Use and GUI Agents]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]], [[Agent Architectures and Orchestration Patterns]]
 
 ## Sources
 - [Toolformer: Language Models Can Teach Themselves to Use Tools (2023)](https://arxiv.org/abs/2302.04761)
 - [Gorilla: Large Language Model Connected with Massive APIs (2023)](https://arxiv.org/abs/2305.15334)
 - [OpenAI, "New tools for building agents" (2025-03-11)](https://openai.com/index/new-tools-for-building-agents/)
+- [Computer use | OpenAI API](https://developers.openai.com/api/docs/guides/tools-computer-use)
 - [Anthropic Docs, "Define tools"](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/implement-tool-use)
 - [OpenAI MCP docs](https://platform.openai.com/docs/mcp/)
 - See [[Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-18

@@ -5,8 +5,10 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - Multi-Agent Systems
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # Multi-Agent Systems
 
@@ -56,6 +58,7 @@ flowchart TD
 - planner plus executor
 - solver plus critic
 - router plus specialists
+- lead agent plus specialists with explicit handoff contracts
 
 ### Bad uses
 - adding “sub-agents” when the task is still small and linear
@@ -71,14 +74,15 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[AI Agents]]
-- Related: [[Agent Architectures and Orchestration Patterns]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[Agent Architectures and Orchestration Patterns]], [[Delegation and Role Specialization]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Large Language Model based Multi-Agents: A Survey of Progress and Challenges (2024)](https://arxiv.org/abs/2402.01680)
 - [A Survey on Large Language Model based Autonomous Agents (2024)](https://arxiv.org/abs/2308.11432)
 - [Anthropic, "How we built our multi-agent research system" (2025-06-13)](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
+- [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - See [[Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-18

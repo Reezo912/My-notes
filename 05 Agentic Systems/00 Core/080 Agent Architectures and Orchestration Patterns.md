@@ -5,8 +5,10 @@ audience:
   - learner
   - builder
   - data-strategy
+aliases:
+  - Agent Architectures and Orchestration Patterns
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-18
 ---
 # Agent Architectures and Orchestration Patterns
 
@@ -47,6 +49,7 @@ flowchart TD
 - agent loop
 - tool layer
 - memory layer
+- delegation contract
 - routing logic
 - review and approval layer
 - tracing and evaluation hooks
@@ -81,7 +84,7 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[AI Agents]], [[Planning and Control Flow in Agent Systems]]
-- Related: [[Tool Use and Environment Interaction]], [[Multi-Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[Tool Use and Environment Interaction]], [[Delegation and Role Specialization]], [[Multi-Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [MRKL Systems (2022)](https://arxiv.org/abs/2205.00445)
@@ -92,4 +95,4 @@ flowchart TD
 - See [[Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-18
