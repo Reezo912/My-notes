@@ -91,8 +91,8 @@ flowchart TD
 - treating “human approved it” as an excuse for weak sandboxing
 
 ## Related Notes
-- Prerequisites: [[Software Engineering Agents]], [[Tool Ecosystems and Harness Engineering]]
-- Related: [[Repo Operating Model for Coding Agents]], [[CI, Pull Requests, and Human Review for Coding Agents]], [[Human-in-the-Loop and Approval Flows]]
+- Prerequisites: [[010 Software Engineering Agents|Software Engineering Agents]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
+- Related: [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]], [[040 CI, Pull Requests, and Human Review for Coding Agents|CI, Pull Requests, and Human Review for Coding Agents]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]]
 
 ## Sources
 - [Safety in building agents | OpenAI API](https://platform.openai.com/docs/guides/agent-builder-safety)
@@ -100,7 +100,7 @@ flowchart TD
 - [Hooks reference](https://code.claude.com/docs/en/hooks)
 - [Unlocking the Codex harness: how we built the App Server | OpenAI](https://openai.com/index/unlocking-the-codex-harness/)
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

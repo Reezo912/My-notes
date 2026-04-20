@@ -8,7 +8,7 @@ audience:
 aliases:
   - AI Agents
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # AI Agents
 
@@ -76,16 +76,22 @@ flowchart TD
 > [!TIP] Practical default
 > Start with a bounded single-agent design and only add memory, replanning, or multi-agent delegation when the task proves it needs them.
 
+## Where This Leads Next
+| If You Want To | Next Note | Why |
+| :--- | :--- | :--- |
+| move from generic agents into repo, terminal, CI, and review workflows | [[010 Software Engineering Agents\|Software Engineering Agents]] | this specialization turns the agent loop into coding work over real repositories and validation systems |
+| turn a use case into a proposal, pilot, or production-target architecture | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] | this specialization maps the agent loop into design artifacts, approval boundaries, and promotion criteria |
+
 ## Related Notes
 - Prerequisites: [[Language Models]]
-- Related: [[RAG (Retrieval Augmented Generation)]], [[When to Use Agentic Systems]], [[Tool Use and Environment Interaction]], [[Planning and Control Flow in Agent Systems]], [[Memory in Agent Systems]], [[Multi-Agent Systems]]
+- Related: [[RAG (Retrieval Augmented Generation)]], [[010 When to Use Agentic Systems|When to Use Agentic Systems]], [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]], [[070 Memory in Agent Systems|Memory in Agent Systems]], [[090 Multi-Agent Systems|Multi-Agent Systems]]
 
 ## Sources
 - [ReAct: Synergizing Reasoning and Acting in Language Models (2022)](https://arxiv.org/abs/2210.03629)
 - [MRKL Systems (2022)](https://arxiv.org/abs/2205.00445)
 - [A Survey on Large Language Model based Autonomous Agents (2024)](https://arxiv.org/abs/2308.11432)
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-10

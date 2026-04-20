@@ -81,8 +81,8 @@ flowchart TD
 > Start with one owned queue, one narrow task class, one review policy, and one metric pack. Expand only after the team can explain both the gains and the costs.
 
 ## Related Notes
-- Prerequisites: [[Software Engineering Agents]], [[Long-Running and Background Coding Agents]]
-- Related: [[Evaluating Software Engineering Agents]], [[CI, Pull Requests, and Human Review for Coding Agents]], [[Proposal-to-Production for Agent Systems]]
+- Prerequisites: [[010 Software Engineering Agents|Software Engineering Agents]], [[070 Long-Running and Background Coding Agents|Long-Running and Background Coding Agents]]
+- Related: [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[040 CI, Pull Requests, and Human Review for Coding Agents|CI, Pull Requests, and Human Review for Coding Agents]], [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]]
 
 ## Sources
 - [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
@@ -90,7 +90,7 @@ flowchart TD
 - [Demystifying evals for AI agents | Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Managed Agents | Anthropic](https://www.anthropic.com/engineering/managed-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

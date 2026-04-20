@@ -92,8 +92,8 @@ flowchart TD
 > Build the first useful harness around one strong workflow: inspect repo, edit files, run trusted validation, and emit a reviewer-ready artifact bundle.
 
 ## Related Notes
-- Prerequisites: [[Tool Ecosystems and Harness Engineering]], [[Software Engineering Agents]]
-- Related: [[Repo Operating Model for Coding Agents]], [[Approvals, Permissions, and Sandboxing for Coding Agents]], [[Evaluating Software Engineering Agents]], [[Long-Running and Background Coding Agents]]
+- Prerequisites: [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]], [[010 Software Engineering Agents|Software Engineering Agents]]
+- Related: [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]], [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[070 Long-Running and Background Coding Agents|Long-Running and Background Coding Agents]]
 
 ## Sources
 - [Agents SDK | OpenAI API](https://platform.openai.com/docs/guides/agents-sdk/)
@@ -102,7 +102,7 @@ flowchart TD
 - [Unlocking the Codex harness: how we built the App Server | OpenAI](https://openai.com/index/unlocking-the-codex-harness/)
 - [Create custom subagents | Claude Code Docs](https://code.claude.com/docs/en/sub-agents)
 - [Extend Claude with skills | Claude Code Docs](https://code.claude.com/docs/en/skills)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

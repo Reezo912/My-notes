@@ -82,8 +82,8 @@ flowchart TD
 > Start with retrieval memory and bounded session state. Add durable long-term memory only when repeated use cases truly require it.
 
 ## Related Notes
-- Prerequisites: [[AI Agents]]
-- Related: [[RAG (Retrieval Augmented Generation)]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Prerequisites: [[020 AI Agents|AI Agents]]
+- Related: [[RAG (Retrieval Augmented Generation)]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Generative Agents: Interactive Simulacra of Human Behavior (2023)](https://arxiv.org/abs/2304.03442)
@@ -91,7 +91,7 @@ flowchart TD
 - [A Survey on Large Language Model based Autonomous Agents (2024)](https://arxiv.org/abs/2308.11432)
 - [Anthropic, "Effective harnesses for long-running agents" (2025-11-26)](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 - [Anthropic, "Scaling Managed Agents: Decoupling the brain from the hands"](https://www.anthropic.com/engineering/managed-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-10

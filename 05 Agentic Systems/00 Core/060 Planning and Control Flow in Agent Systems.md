@@ -84,8 +84,8 @@ Suppose the task is: "Compare three vendors for a support automation project."
 > Start reactive. Add explicit planning only when tasks regularly need multiple dependent steps or fail without lookahead.
 
 ## Related Notes
-- Prerequisites: [[AI Agents]]
-- Related: [[Tool Use and Environment Interaction]], [[Memory in Agent Systems]], [[Agent Architectures and Orchestration Patterns]]
+- Prerequisites: [[020 AI Agents|AI Agents]]
+- Related: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[070 Memory in Agent Systems|Memory in Agent Systems]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
 
 ## Sources
 - [ReAct: Synergizing Reasoning and Acting in Language Models (2022)](https://arxiv.org/abs/2210.03629)
@@ -93,7 +93,7 @@ Suppose the task is: "Compare three vendors for a support automation project."
 - [Reflexion: Language Agents with Verbal Reinforcement Learning (2023)](https://arxiv.org/abs/2303.11366)
 - [Language Agent Tree Search (2023)](https://arxiv.org/abs/2310.04406)
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-10

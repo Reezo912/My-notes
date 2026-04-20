@@ -90,9 +90,15 @@ MCP is the right abstraction when you want one connector surface to work across 
 > [!CAUTION] Reusable workflows can decay silently
 > Skills, commands, and hooks often keep working syntactically after the environment has changed. The result is silent drift: agents follow an obsolete playbook with high confidence.
 
+## Where This Leads Next
+| If You Want To | Next Note | Why |
+| :--- | :--- | :--- |
+| apply harness thinking to coding agents in real repos | [[010 Software Engineering Agents\|Software Engineering Agents]] | that specialization shows how repo contracts, CI, review flow, and operator playbooks turn harness ideas into software work |
+| apply harness, approvals, and validation thinking to architecture proposals | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] | that specialization uses the same tool and harness layer to make proposal and pilot designs concrete |
+
 ## Related Notes
-- Prerequisites: [[Tool Use and Environment Interaction]], [[MCP and Connector Protocols]]
-- Related: [[Software Engineering Agents]], [[Applied Agentic Architectures]], [[Agent Architectures and Orchestration Patterns]]
+- Prerequisites: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[040 MCP and Connector Protocols|MCP and Connector Protocols]]
+- Related: [[010 Software Engineering Agents|Software Engineering Agents]], [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
 
 ## Sources
 - [Unlocking the Codex harness: how we built the App Server | OpenAI](https://openai.com/index/unlocking-the-codex-harness/)
@@ -104,7 +110,7 @@ MCP is the right abstraction when you want one connector surface to work across 
 - [Create custom subagents](https://code.claude.com/docs/en/sub-agents)
 - [Hooks reference](https://code.claude.com/docs/en/hooks)
 - [MCP Specification](https://modelcontextprotocol.io/specification/latest)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

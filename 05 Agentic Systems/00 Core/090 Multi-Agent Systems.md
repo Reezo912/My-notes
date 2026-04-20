@@ -73,8 +73,8 @@ flowchart TD
 > Start with a strong single-agent architecture. Add multi-agent decomposition only when role specialization or parallelism clearly improves the evals.
 
 ## Related Notes
-- Prerequisites: [[AI Agents]]
-- Related: [[Agent Architectures and Orchestration Patterns]], [[Delegation and Role Specialization]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Prerequisites: [[020 AI Agents|AI Agents]]
+- Related: [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[065 Delegation and Role Specialization|Delegation and Role Specialization]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Large Language Model based Multi-Agents: A Survey of Progress and Challenges (2024)](https://arxiv.org/abs/2402.01680)
@@ -82,7 +82,7 @@ flowchart TD
 - [Anthropic, "How we built our multi-agent research system" (2025-06-13)](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

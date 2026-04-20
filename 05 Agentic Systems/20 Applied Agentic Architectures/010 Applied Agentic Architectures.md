@@ -8,7 +8,7 @@ audience:
 aliases:
   - Applied Agentic Architectures
 status: evergreen
-last_reviewed: 2026-04-18
+last_reviewed: 2026-04-20
 ---
 # Applied Agentic Architectures
 
@@ -82,31 +82,44 @@ flowchart TD
 ### Design Workflow
 | Stage | Main Question | Best Follow-On Note |
 | :--- | :--- | :--- |
-| architecture design | what is the minimum viable system shape? | [[Architecture Design Methods for Agent Systems]] |
-| approval design | where must human judgment stay in control? | [[Human-in-the-Loop and Approval Flows]] |
-| validation design | how will we know the architecture is actually good? | [[Validation and Eval Design for Agent Architectures]] |
-| promotion design | what turns this from proposal into an operated system? | [[Proposal-to-Production for Agent Systems]] |
+| architecture design | what is the minimum viable system shape? | [[020 Architecture Design Methods for Agent Systems\|Architecture Design Methods for Agent Systems]] |
+| approval design | where must human judgment stay in control? | [[030 Human-in-the-Loop and Approval Flows\|Human-in-the-Loop and Approval Flows]] |
+| validation design | how will we know the architecture is actually good? | [[040 Validation and Eval Design for Agent Architectures\|Validation and Eval Design for Agent Architectures]] |
+| promotion design | what turns this from proposal into an operated system? | [[050 Proposal-to-Production for Agent Systems\|Proposal-to-Production for Agent Systems]] |
+
+### Core Handoff
+This specialization is not self-contained. It assumes the shared branch core has already covered the agent loop, the tool and harness layer, architecture and orchestration patterns, and production-oriented evaluation.
+
+| Shared Core Note | Why It Matters Before This Track |
+| :--- | :--- |
+| [[020 AI Agents\|AI Agents]] | defines what kind of system you are actually proposing |
+| [[030 Tool Use and Environment Interaction\|Tool Use and Environment Interaction]] | makes tool boundaries, permissions, and environment shape explicit |
+| [[050 Tool Ecosystems and Harness Engineering\|Tool Ecosystems and Harness Engineering]] | adds harness, session, approval, and isolation thinking to the design |
+| [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]] | gives the candidate control patterns you are choosing between |
+| [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | keeps pilot and production-target architectures tied to real validation and control |
 
 ### Track Map
-This track is not self-contained. It assumes the shared branch core has already covered `AI Agents`, `Agent Architectures and Orchestration Patterns`, and `Multi-Agent Systems`.
+This track builds on the core handoff notes above. Read those first, then use this specialization to turn real use cases into design artifacts, pilot criteria, and production-target architectures.
 
 | Stage | Best Notes | Outcome |
 | :--- | :--- | :--- |
-| Core handoff | [[AI Agents]], [[Agent Architectures and Orchestration Patterns]], [[Multi-Agent Systems]] | shared trunk required before the specialization track |
-| Apprenticeship | [[Applied Agentic Architectures]], [[Architecture Design Methods for Agent Systems]], [[Human-in-the-Loop and Approval Flows]] | design a sound proposal and reject unnecessary complexity |
-| Advanced | [[Validation and Eval Design for Agent Architectures]], [[Proposal-to-Production for Agent Systems]], [[Orchestration Trade-offs and Pattern Selection]], [[Delegation and Role Specialization]] | move an architecture into pilot with real promotion criteria |
-| Mastery | [[Reliability, Checkpoints, and Recovery in Agent Systems]], [[Computer Use and GUI Agents]], [[Applied Agentic Architecture Case Studies]], [[Agent Architectures and Orchestration Patterns]], [[Multi-Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]] | review, govern, and evolve architectures in production |
+| Core handoff | [[020 AI Agents\|AI Agents]], [[030 Tool Use and Environment Interaction\|Tool Use and Environment Interaction]], [[050 Tool Ecosystems and Harness Engineering\|Tool Ecosystems and Harness Engineering]], [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]], [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | shared trunk required before the specialization track |
+| Apprenticeship | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]], [[020 Architecture Design Methods for Agent Systems\|Architecture Design Methods for Agent Systems]], [[030 Human-in-the-Loop and Approval Flows\|Human-in-the-Loop and Approval Flows]] | design a sound proposal and reject unnecessary complexity |
+| Advanced | [[040 Validation and Eval Design for Agent Architectures\|Validation and Eval Design for Agent Architectures]], [[050 Proposal-to-Production for Agent Systems\|Proposal-to-Production for Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection\|Orchestration Trade-offs and Pattern Selection]], [[065 Delegation and Role Specialization\|Delegation and Role Specialization]] | move an architecture into pilot with real promotion criteria |
+| Mastery | [[070 Reliability, Checkpoints, and Recovery in Agent Systems\|Reliability, Checkpoints, and Recovery in Agent Systems]], [[075 Computer Use and GUI Agents\|Computer Use and GUI Agents]], [[080 Applied Agentic Architecture Case Studies\|Applied Agentic Architecture Case Studies]], [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]], [[090 Multi-Agent Systems\|Multi-Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | review, govern, and evolve architectures in production |
 
-### Subline Notes
-- [[Architecture Design Methods for Agent Systems]]
-- [[Human-in-the-Loop and Approval Flows]]
-- [[Validation and Eval Design for Agent Architectures]]
-- [[Proposal-to-Production for Agent Systems]]
-- [[Orchestration Trade-offs and Pattern Selection]]
-- [[Delegation and Role Specialization]]
-- [[Reliability, Checkpoints, and Recovery in Agent Systems]]
-- [[Computer Use and GUI Agents]]
-- [[Applied Agentic Architecture Case Studies]]
+### Track Folder Map
+| Folder | Role |
+| :--- | :--- |
+| `05 Agentic Systems/20 Applied Agentic Architectures` | specialization hub plus design, validation, approval, and production-hardening notes |
+
+### Note Groups
+| Group | Notes | Use It For |
+| :--- | :--- | :--- |
+| design and framing | [[020 Architecture Design Methods for Agent Systems\|Architecture Design Methods for Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection\|Orchestration Trade-offs and Pattern Selection]], [[065 Delegation and Role Specialization\|Delegation and Role Specialization]] | choosing the minimum viable architecture and role split |
+| approvals and control | [[030 Human-in-the-Loop and Approval Flows\|Human-in-the-Loop and Approval Flows]], [[075 Computer Use and GUI Agents\|Computer Use and GUI Agents]] | deciding where human judgment, authority, and fragile surfaces stay gated |
+| validation and promotion | [[040 Validation and Eval Design for Agent Architectures\|Validation and Eval Design for Agent Architectures]], [[050 Proposal-to-Production for Agent Systems\|Proposal-to-Production for Agent Systems]] | turning a proposal into a pilot with real promotion criteria |
+| production hardening | [[070 Reliability, Checkpoints, and Recovery in Agent Systems\|Reliability, Checkpoints, and Recovery in Agent Systems]], [[080 Applied Agentic Architecture Case Studies\|Applied Agentic Architecture Case Studies]] | learning what a governed production-target architecture must survive |
 
 > [!CAUTION] `ReAct` is a means, not the answer
 > `ReAct` is useful when observation changes the next step, but it should not become the default architecture just because it is easy to sketch in a proposal.
@@ -128,8 +141,8 @@ This track is not self-contained. It assumes the shared branch core has already 
 > For proposal work, write the candidate architecture in layers: task, tools, harness, control loop, memory, approvals, and evals. Then explicitly label it as concept, pilot, or production target.
 
 ## Related Notes
-- Prerequisites: [[When to Use Agentic Systems]], [[Agent Architectures and Orchestration Patterns]]
-- Related: [[Economic and ROI Analysis for Agentic Systems]], [[AI Agents]], [[Architecture Design Methods for Agent Systems]], [[Proposal-to-Production for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Human-in-the-Loop and Approval Flows]], [[Orchestration Trade-offs and Pattern Selection]], [[Delegation and Role Specialization]], [[Reliability, Checkpoints, and Recovery in Agent Systems]], [[Computer Use and GUI Agents]], [[Applied Agentic Architecture Case Studies]], [[Planning and Control Flow in Agent Systems]], [[Tool Use and Environment Interaction]], [[Tool Ecosystems and Harness Engineering]], [[Software Engineering Agents]]
+- Prerequisites: [[020 AI Agents|AI Agents]], [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]], [[020 AI Agents|AI Agents]], [[020 Architecture Design Methods for Agent Systems|Architecture Design Methods for Agent Systems]], [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[060 Orchestration Trade-offs and Pattern Selection|Orchestration Trade-offs and Pattern Selection]], [[065 Delegation and Role Specialization|Delegation and Role Specialization]], [[070 Reliability, Checkpoints, and Recovery in Agent Systems|Reliability, Checkpoints, and Recovery in Agent Systems]], [[075 Computer Use and GUI Agents|Computer Use and GUI Agents]], [[080 Applied Agentic Architecture Case Studies|Applied Agentic Architecture Case Studies]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]], [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]], [[010 Software Engineering Agents|Software Engineering Agents]]
 
 ## Sources
 - [ReAct: Synergizing Reasoning and Acting in Language Models (2022)](https://arxiv.org/abs/2210.03629)
@@ -138,7 +151,7 @@ This track is not self-contained. It assumes the shared branch core has already 
 - [Agent Builder | OpenAI](https://developers.openai.com/api/docs/guides/agent-builder)
 - [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-18
+- 2026-04-20

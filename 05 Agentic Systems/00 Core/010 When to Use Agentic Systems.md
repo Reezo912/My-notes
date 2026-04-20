@@ -70,7 +70,7 @@ flowchart TD
 > [!IMPORTANT] Start with the minimum viable architecture
 > Current official guidance from both OpenAI and Anthropic converges on the same rule: begin with the simplest loop that solves the task, then add complexity only when the evals justify it.
 
-If the task clears the conceptual bar for agentic design but the business case is still uncertain, continue to [[Economic and ROI Analysis for Agentic Systems]] before moving into a larger architecture proposal.
+If the task clears the conceptual bar for agentic design but the business case is still uncertain, continue to [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]] before moving into a larger architecture proposal.
 
 ## Design Patterns and Failure Modes
 ### Strong use cases
@@ -100,7 +100,7 @@ If the task clears the conceptual bar for agentic design but the business case i
 
 ## Related Notes
 - Prerequisites: [[Language Models]], [[RAG (Retrieval Augmented Generation)]]
-- Related: [[Economic and ROI Analysis for Agentic Systems]], [[AI Agents]], [[Agent Architectures and Orchestration Patterns]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]], [[020 AI Agents|AI Agents]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Anthropic, "Building Effective AI Agents" (2024-12-19)](https://www.anthropic.com/engineering/building-effective-agents)
@@ -108,7 +108,7 @@ If the task clears the conceptual bar for agentic design but the business case i
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [A Survey on Large Language Model based Autonomous Agents (2024)](https://arxiv.org/abs/2308.11432)
 - [Large Language Model based Multi-Agents: A Survey of Progress and Challenges (2024)](https://arxiv.org/abs/2402.01680)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

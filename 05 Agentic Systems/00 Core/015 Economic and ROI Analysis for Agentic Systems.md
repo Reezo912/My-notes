@@ -99,8 +99,8 @@ flowchart TD
 > Run the first business case as a bounded pilot: compare the candidate agent against a simpler baseline, measure cost per successful task, then promote only if quality gains and labor savings remain positive after review cost is included.
 
 ## Related Notes
-- Prerequisites: [[When to Use Agentic Systems]]
-- Related: [[AI Agents]], [[Applied Agentic Architectures]], [[Evaluation, Observability, and Governance for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Orchestration Trade-offs and Pattern Selection]]
+- Prerequisites: [[010 When to Use Agentic Systems|When to Use Agentic Systems]]
+- Related: [[020 AI Agents|AI Agents]], [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[060 Orchestration Trade-offs and Pattern Selection|Orchestration Trade-offs and Pattern Selection]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
@@ -108,7 +108,7 @@ flowchart TD
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Demystifying evals for AI agents | Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

@@ -76,8 +76,8 @@ flowchart TD
 > Compare every new architecture candidate against a simpler baseline on the same task. If the extra orchestration does not improve either results or control, simplify.
 
 ## Related Notes
-- Prerequisites: [[Agent Architectures and Orchestration Patterns]], [[Applied Agentic Architectures]]
-- Related: [[Architecture Design Methods for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Multi-Agent Systems]]
+- Prerequisites: [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[010 Applied Agentic Architectures|Applied Agentic Architectures]]
+- Related: [[020 Architecture Design Methods for Agent Systems|Architecture Design Methods for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[090 Multi-Agent Systems|Multi-Agent Systems]]
 
 ## Sources
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
@@ -85,7 +85,7 @@ flowchart TD
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [MRKL Systems (2022)](https://arxiv.org/abs/2205.00445)
 - [ReAct: Synergizing Reasoning and Acting in Language Models (2022)](https://arxiv.org/abs/2210.03629)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

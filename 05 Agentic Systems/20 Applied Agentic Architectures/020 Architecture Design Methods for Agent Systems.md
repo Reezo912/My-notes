@@ -82,8 +82,8 @@ flowchart TD
 - treating evaluation as something to add after implementation
 
 ## Related Notes
-- Prerequisites: [[Applied Agentic Architectures]], [[Agent Architectures and Orchestration Patterns]]
-- Related: [[Proposal-to-Production for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Human-in-the-Loop and Approval Flows]]
+- Prerequisites: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
+- Related: [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
@@ -91,7 +91,7 @@ flowchart TD
 - [Agent Builder | OpenAI API](https://platform.openai.com/docs/guides/agent-builder)
 - [ReAct: Synergizing Reasoning and Acting in Language Models (2022)](https://arxiv.org/abs/2210.03629)
 - [MRKL Systems (2022)](https://arxiv.org/abs/2205.00445)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

@@ -83,8 +83,8 @@ flowchart TD
 > Start with the single-agent loop. Add routing or delegation one at a time, and add background execution only when task duration or external waits force it.
 
 ## Related Notes
-- Prerequisites: [[AI Agents]], [[Planning and Control Flow in Agent Systems]]
-- Related: [[Tool Use and Environment Interaction]], [[Delegation and Role Specialization]], [[Multi-Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Prerequisites: [[020 AI Agents|AI Agents]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]]
+- Related: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[065 Delegation and Role Specialization|Delegation and Role Specialization]], [[090 Multi-Agent Systems|Multi-Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [MRKL Systems (2022)](https://arxiv.org/abs/2205.00445)
@@ -92,7 +92,7 @@ flowchart TD
 - [Anthropic, "How we built our multi-agent research system" (2025-06-13)](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [OpenAI, "Introducing AgentKit" (2025-10-06)](https://openai.com/index/introducing-agentkit/)
 - [OpenAI, "Background mode"](https://platform.openai.com/docs/guides/background)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

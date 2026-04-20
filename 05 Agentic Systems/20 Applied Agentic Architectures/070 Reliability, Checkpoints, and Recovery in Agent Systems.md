@@ -82,8 +82,8 @@ flowchart TD
 > The first recovery capability to add is not a fancy retry policy. It is a checkpoint plus a clean human-readable recovery artifact.
 
 ## Related Notes
-- Prerequisites: [[Proposal-to-Production for Agent Systems]], [[Validation and Eval Design for Agent Architectures]]
-- Related: [[Long-Running and Background Coding Agents]], [[Human-in-the-Loop and Approval Flows]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Prerequisites: [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]]
+- Related: [[070 Long-Running and Background Coding Agents|Long-Running and Background Coding Agents]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Background mode | OpenAI API](https://platform.openai.com/docs/guides/background)
@@ -91,7 +91,7 @@ flowchart TD
 - [Managed Agents | Anthropic](https://www.anthropic.com/engineering/managed-agents)
 - [Demystifying evals for AI agents | Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

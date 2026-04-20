@@ -100,8 +100,8 @@ flowchart TD
 - treating policy violations as rare edge cases instead of first-class eval targets
 
 ## Related Notes
-- Prerequisites: [[Software Engineering Agents]], [[Evaluation, Observability, and Governance for Agent Systems]]
-- Related: [[CI, Pull Requests, and Human Review for Coding Agents]], [[Validation and Eval Design for Agent Architectures]], [[Building Coding Agent Harnesses]], [[Operating Coding Agents in Teams]]
+- Prerequisites: [[010 Software Engineering Agents|Software Engineering Agents]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[040 CI, Pull Requests, and Human Review for Coding Agents|CI, Pull Requests, and Human Review for Coding Agents]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[060 Building Coding Agent Harnesses|Building Coding Agent Harnesses]], [[080 Operating Coding Agents in Teams|Operating Coding Agents in Teams]]
 
 ## Sources
 - [SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2023)](https://arxiv.org/abs/2310.06770)
@@ -109,7 +109,7 @@ flowchart TD
 - [Demystifying evals for AI agents | Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
 - [Raise the bar on SWE-bench Verified with Claude 3.5 Sonnet | Anthropic](https://www.anthropic.com/engineering/swe-bench-sonnet)
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

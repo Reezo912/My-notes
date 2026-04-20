@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cb3fe8e127c42f2a",
+        "id": "e2d4cb6917ade229",
         "type": "tabs",
         "children": [
           {
-            "id": "5d0bfd2f37354962",
+            "id": "c8ba7741173a89c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.es.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README.es"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.es.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de README.es"
+              "title": "Enlaces entrantes"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.es.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de README.es"
+              "title": "Enlaces salientes"
             }
           },
           {
@@ -127,13 +121,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.es.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de README.es"
+              "title": "Esquema"
             }
           },
           {
@@ -197,29 +190,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5d0bfd2f37354962",
+  "active": "c8ba7741173a89c0",
   "lastOpenFiles": [
-    "README.md",
-    "README.es.md",
-    "00 Home/Home.md",
-    "00 Home/Vault Dashboard.md",
-    "00 Home/Vault Catalog.base",
-    "00 Home/Deep Learning & NLP Index.md",
-    "00 Home/Data Preparation Index.md",
-    "AGENTS.md",
-    "90 Guides/Note Style Guide.md",
+    "05 Agentic Systems/10 Software Engineering Agents/010 Software Engineering Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/080 Operating Coding Agents in Teams.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/070 Long-Running and Background Coding Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/060 Building Coding Agent Harnesses.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/050 Evaluating Software Engineering Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/030 Approvals, Permissions, and Sandboxing for Coding Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/020 Repo Operating Model for Coding Agents.md",
+    "05 Agentic Systems/90 Research and Roadmap/010 Agentic Systems Sources and Research Log.md",
+    "Agentic Systems Sources and Research Log.md",
+    "Sin título.canvas",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/090 Operating Agentic Coding Environments.md",
+    "05 Agentic Systems/10 Software Engineering Agents/115 OpenCode Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/170 Eval Hygiene for Agentic Coding Systems.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/160 Tool Design and MCP Integration in Practice.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/150 Parallel Sessions, Worktrees, and Multi-Agent Workflows.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/140 Context Engineering and Session Hygiene for Coding Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/130 Skills, Commands, and Hooks in Practice.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/120 Writing Effective CLAUDE and AGENTS Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/115 OpenCode Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/110 Codex Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/100 Claude Code Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems",
+    "05 Agentic Systems/10 Software Engineering Agents/110 Codex Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/100 Claude Code Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/050 Evaluating Software Engineering Agents.md",
+    "05 Agentic Systems/10 Software Engineering Agents/120 Writing Effective CLAUDE and AGENTS Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/170 Eval Hygiene for Agentic Coding Systems.md",
+    "05 Agentic Systems/90 Research and Roadmap",
+    "05 Agentic Systems/20 Applied Agentic Architectures",
+    "05 Agentic Systems/10 Software Engineering Agents",
+    "05 Agentic Systems/00 Core",
+    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png",
+    "vault_catalog.csv",
     "90 Guides/Editorial Review.base",
-    "90 Guides/Editorial Dashboard.md",
-    "00 Home/Agentic Systems Index.md",
-    "00 Home/Machine Learning Index.md",
-    "05 Agentic Systems/Agentic Systems Sources and Research Log.md",
-    "05 Agentic Systems/Agent Architectures and Orchestration Patterns.md",
-    "05 Agentic Systems/When to Use Agentic Systems.md",
-    "05 Agentic Systems/AI Agents.md",
-    "05 Agentic Systems/Tool Use and Environment Interaction.md",
-    "05 Agentic Systems/Planning and Control Flow in Agent Systems.md",
-    "05 Agentic Systems/Memory in Agent Systems.md",
-    "05 Agentic Systems/Multi-Agent Systems.md",
-    "05 Agentic Systems/Evaluation, Observability, and Governance for Agent Systems.md"
+    "00 Home/Vault Catalog.base"
   ]
 }

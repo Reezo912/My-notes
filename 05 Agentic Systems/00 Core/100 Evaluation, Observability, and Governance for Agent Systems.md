@@ -8,7 +8,7 @@ audience:
 aliases:
   - Evaluation, Observability, and Governance for Agent Systems
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Evaluation, Observability, and Governance for Agent Systems
 
@@ -76,9 +76,15 @@ flowchart TD
 > [!TIP] Practical default
 > Before expanding autonomy, first expand eval coverage, trace quality, and approval boundaries.
 
+## Where This Leads Next
+| If You Want To | Next Note | Why |
+| :--- | :--- | :--- |
+| apply evals, review gates, and governance to coding work over repos and CI | [[010 Software Engineering Agents\|Software Engineering Agents]] | that specialization shows how validation, PR review, harnesses, and team operating models carry these controls into software delivery |
+| apply validation and approval discipline to architecture proposals and pilots | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] | that specialization turns eval and governance into promotion gates for proposal, pilot, and production-target designs |
+
 ## Related Notes
-- Prerequisites: [[AI Agents]]
-- Related: [[Tool Use and Environment Interaction]], [[Agent Architectures and Orchestration Patterns]], [[When to Use Agentic Systems]]
+- Prerequisites: [[020 AI Agents|AI Agents]]
+- Related: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[010 When to Use Agentic Systems|When to Use Agentic Systems]]
 
 ## Sources
 - [Anthropic, "Demystifying evals for AI agents" (2026-01-09)](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
@@ -88,7 +94,7 @@ flowchart TD
 - [SWE-bench (2023)](https://arxiv.org/abs/2310.06770)
 - [OSWorld (2024)](https://arxiv.org/abs/2404.07972)
 - [The Instruction Hierarchy (2024)](https://arxiv.org/abs/2404.13208)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-10

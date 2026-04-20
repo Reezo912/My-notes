@@ -97,8 +97,8 @@ flowchart TD
 - lacking a rollback path once the agent touches external systems
 
 ## Related Notes
-- Prerequisites: [[Applied Agentic Architectures]], [[Evaluation, Observability, and Governance for Agent Systems]]
-- Related: [[Architecture Design Methods for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Human-in-the-Loop and Approval Flows]], [[Reliability, Checkpoints, and Recovery in Agent Systems]]
+- Prerequisites: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[020 Architecture Design Methods for Agent Systems|Architecture Design Methods for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[070 Reliability, Checkpoints, and Recovery in Agent Systems|Reliability, Checkpoints, and Recovery in Agent Systems]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
@@ -107,7 +107,7 @@ flowchart TD
 - [Safety in building agents | OpenAI API](https://platform.openai.com/docs/guides/agent-builder-safety)
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

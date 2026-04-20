@@ -91,8 +91,8 @@ flowchart TD
 > Start with one lead agent and one specialist or verifier. Only add more roles after evals show that the extra role removes a specific failure mode or meaningfully improves throughput.
 
 ## Related Notes
-- Prerequisites: [[Multi-Agent Systems]], [[Orchestration Trade-offs and Pattern Selection]]
-- Related: [[Applied Agentic Architectures]], [[Agent Architectures and Orchestration Patterns]], [[Human-in-the-Loop and Approval Flows]], [[Applied Agentic Architecture Case Studies]], [[Tool Ecosystems and Harness Engineering]]
+- Prerequisites: [[090 Multi-Agent Systems|Multi-Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection|Orchestration Trade-offs and Pattern Selection]]
+- Related: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[080 Applied Agentic Architecture Case Studies|Applied Agentic Architecture Case Studies]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
@@ -100,7 +100,7 @@ flowchart TD
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Create custom subagents | Claude Code docs](https://code.claude.com/docs/en/sub-agents)
 - [Large Language Model based Multi-Agents: A Survey of Progress and Challenges (2024)](https://arxiv.org/abs/2402.01680)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

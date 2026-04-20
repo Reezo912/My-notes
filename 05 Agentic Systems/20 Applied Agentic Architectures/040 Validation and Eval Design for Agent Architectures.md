@@ -90,8 +90,8 @@ flowchart TD
 > Before scaling an architecture, compare it against a simpler baseline on the same task set. If the extra planning, routing, or delegation does not produce better traces or outcomes, remove it.
 
 ## Related Notes
-- Prerequisites: [[Applied Agentic Architectures]], [[Evaluation, Observability, and Governance for Agent Systems]]
-- Related: [[Architecture Design Methods for Agent Systems]], [[Proposal-to-Production for Agent Systems]], [[Evaluating Software Engineering Agents]], [[Reliability, Checkpoints, and Recovery in Agent Systems]]
+- Prerequisites: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
+- Related: [[020 Architecture Design Methods for Agent Systems|Architecture Design Methods for Agent Systems]], [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[070 Reliability, Checkpoints, and Recovery in Agent Systems|Reliability, Checkpoints, and Recovery in Agent Systems]]
 
 ## Sources
 - [Trace grading | OpenAI API](https://platform.openai.com/docs/guides/trace-grading)
@@ -99,7 +99,7 @@ flowchart TD
 - [Survey on Evaluation of LLM-based Agents (2025)](https://arxiv.org/abs/2503.16416)
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

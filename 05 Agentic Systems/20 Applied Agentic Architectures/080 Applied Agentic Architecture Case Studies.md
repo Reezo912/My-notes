@@ -70,15 +70,15 @@ flowchart TD
 > Write each case with one paragraph on why the chosen pattern beat a simpler alternative and one paragraph on what would stop it from reaching production.
 
 ## Related Notes
-- Prerequisites: [[Applied Agentic Architectures]], [[Architecture Design Methods for Agent Systems]]
-- Related: [[Proposal-to-Production for Agent Systems]], [[Orchestration Trade-offs and Pattern Selection]], [[Software Engineering Agents]]
+- Prerequisites: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[020 Architecture Design Methods for Agent Systems|Architecture Design Methods for Agent Systems]]
+- Related: [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection|Orchestration Trade-offs and Pattern Selection]], [[010 Software Engineering Agents|Software Engineering Agents]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

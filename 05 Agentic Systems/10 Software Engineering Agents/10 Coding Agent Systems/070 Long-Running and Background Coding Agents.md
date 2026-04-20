@@ -80,8 +80,8 @@ flowchart TD
 > Put only the long or blocked part of the workflow in background mode. Keep task launch, risky approvals, and final review in explicit human-visible checkpoints.
 
 ## Related Notes
-- Prerequisites: [[Building Coding Agent Harnesses]], [[Repo Operating Model for Coding Agents]]
-- Related: [[Operating Coding Agents in Teams]], [[Proposal-to-Production for Agent Systems]], [[Approvals, Permissions, and Sandboxing for Coding Agents]]
+- Prerequisites: [[060 Building Coding Agent Harnesses|Building Coding Agent Harnesses]], [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]]
+- Related: [[080 Operating Coding Agents in Teams|Operating Coding Agents in Teams]], [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
 
 ## Sources
 - [Background mode | OpenAI API](https://platform.openai.com/docs/guides/background)
@@ -89,7 +89,7 @@ flowchart TD
 - [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
 - [Effective harnesses for long-running agents | Anthropic](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 - [Managed Agents | Anthropic](https://www.anthropic.com/engineering/managed-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

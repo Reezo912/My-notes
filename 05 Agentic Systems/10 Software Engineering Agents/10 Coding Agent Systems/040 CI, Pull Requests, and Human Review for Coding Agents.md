@@ -94,8 +94,8 @@ flowchart TD
 > Ask the agent to optimize for reviewer throughput: smallest coherent diff, explicit validation, visible assumptions, and a clear next step if the PR is not ready.
 
 ## Related Notes
-- Prerequisites: [[Repo Operating Model for Coding Agents]], [[Software Engineering Agents]]
-- Related: [[Approvals, Permissions, and Sandboxing for Coding Agents]], [[Evaluating Software Engineering Agents]], [[Proposal-to-Production for Agent Systems]], [[Operating Coding Agents in Teams]]
+- Prerequisites: [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]], [[010 Software Engineering Agents|Software Engineering Agents]]
+- Related: [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]], [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[080 Operating Coding Agents in Teams|Operating Coding Agents in Teams]]
 
 ## Sources
 - [Introducing Codex | OpenAI](https://openai.com/index/introducing-codex/)
@@ -103,7 +103,7 @@ flowchart TD
 - [Introducing the Codex app | OpenAI](https://openai.com/index/introducing-the-codex-app/)
 - [Raise the bar on SWE-bench Verified with Claude 3.5 Sonnet | Anthropic](https://www.anthropic.com/engineering/swe-bench-sonnet)
 - [Demystifying evals for AI agents | Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

@@ -95,8 +95,8 @@ flowchart TD
 > Use GUI agents for bounded pilot workflows in isolated environments first. Promote them only when API-first options are unavailable and you can prove safe recovery, strong approvals, and acceptable task economics.
 
 ## Related Notes
-- Prerequisites: [[Tool Use and Environment Interaction]], [[Applied Agentic Architectures]], [[Human-in-the-Loop and Approval Flows]], [[Reliability, Checkpoints, and Recovery in Agent Systems]]
-- Related: [[Economic and ROI Analysis for Agentic Systems]], [[Human-in-the-Loop and Approval Flows]], [[Reliability, Checkpoints, and Recovery in Agent Systems]], [[Validation and Eval Design for Agent Architectures]]
+- Prerequisites: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]], [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[070 Reliability, Checkpoints, and Recovery in Agent Systems|Reliability, Checkpoints, and Recovery in Agent Systems]]
+- Related: [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[070 Reliability, Checkpoints, and Recovery in Agent Systems|Reliability, Checkpoints, and Recovery in Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]]
 
 ## Sources
 - [Computer-Using Agent | OpenAI](https://openai.com/index/computer-using-agent/)
@@ -105,7 +105,7 @@ flowchart TD
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments (2024)](https://arxiv.org/abs/2404.07972)
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents (2023)](https://arxiv.org/abs/2307.13854)
 - [Large Language Model-Brained GUI Agents: A Survey (2024)](https://arxiv.org/abs/2411.18279)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

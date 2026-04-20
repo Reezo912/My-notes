@@ -82,15 +82,15 @@ flowchart TD
 > Put humans in the loop at the action boundary that matters most: external writes, irreversible operations, or outputs that affect customers, codebases, or production systems.
 
 ## Related Notes
-- Prerequisites: [[Applied Agentic Architectures]], [[Approvals, Permissions, and Sandboxing for Coding Agents]]
-- Related: [[Proposal-to-Production for Agent Systems]], [[Validation and Eval Design for Agent Architectures]], [[Evaluation, Observability, and Governance for Agent Systems]]
+- Prerequisites: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
+- Related: [[050 Proposal-to-Production for Agent Systems|Proposal-to-Production for Agent Systems]], [[040 Validation and Eval Design for Agent Architectures|Validation and Eval Design for Agent Architectures]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ## Sources
 - [Safety in building agents | OpenAI API](https://platform.openai.com/docs/guides/agent-builder-safety)
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
 - [How we built our multi-agent research system | Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

@@ -106,8 +106,8 @@ flowchart TD
 - hiding missing permissions or environment failures until the end
 
 ## Related Notes
-- Prerequisites: [[Software Engineering Agents]], [[Tool Ecosystems and Harness Engineering]]
-- Related: [[Approvals, Permissions, and Sandboxing for Coding Agents]], [[CI, Pull Requests, and Human Review for Coding Agents]], [[Building Coding Agent Harnesses]], [[Long-Running and Background Coding Agents]]
+- Prerequisites: [[010 Software Engineering Agents|Software Engineering Agents]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
+- Related: [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]], [[040 CI, Pull Requests, and Human Review for Coding Agents|CI, Pull Requests, and Human Review for Coding Agents]], [[060 Building Coding Agent Harnesses|Building Coding Agent Harnesses]], [[070 Long-Running and Background Coding Agents|Long-Running and Background Coding Agents]]
 
 ## Sources
 - [Introducing Codex | OpenAI](https://openai.com/index/introducing-codex/)
@@ -116,7 +116,7 @@ flowchart TD
 - [Building Effective AI Agents | Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
 - [Claude Code overview](https://code.claude.com/docs/en/overview)
 - [Claude Code settings](https://code.claude.com/docs/en/settings)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 - 2026-04-18

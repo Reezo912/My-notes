@@ -127,8 +127,8 @@ Products can use MCP underneath and still need a richer session layer above it. 
 
 ## Related Notes
 
-- Prerequisites: [[Tool Use and Environment Interaction]]
-- Related: [[Tool Ecosystems and Harness Engineering]], [[Planning and Control Flow in Agent Systems]], [[Evaluation, Observability, and Governance for Agent Systems]], [[Agent Architectures and Orchestration Patterns]]
+- Prerequisites: [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]]
+- Related: [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]], [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
 
 ## Sources
 
@@ -139,7 +139,7 @@ Products can use MCP underneath and still need a richer session layer above it. 
 - [MCP Ecosystem](https://github.com/modelcontextprotocol/servers)
 - [Linux Foundation governance (Dec 2025)](https://foundation.modelcontextprotocol.io)
 - [Unlocking the Codex harness: how we built the App Server | OpenAI](https://openai.com/index/unlocking-the-codex-harness/)
-- See [[Agentic Systems Sources and Research Log]]
+- See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
 
