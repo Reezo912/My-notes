@@ -6,6 +6,7 @@ audience:
   - builder
   - data-strategy
 aliases:
+  - 080 Applied Agentic Architecture Case Studies
   - Applied Agentic Architecture Case Studies
 status: evergreen
 last_reviewed: 2026-04-18

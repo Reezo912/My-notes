@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-18
+last_reviewed: 2026-04-20
 ---
 # AGENTS.md
 
@@ -19,6 +19,7 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - `03 Classical ML`
   - `04 Deep Learning & NLP`
   - `05 Agentic Systems`
+  - `80 Knowledge Ops`
   - `90 Guides`
   - `99 Archive`
 - Large branches may introduce numbered subfolders when a flat layout stops scaling. Current example inside `05 Agentic Systems`:
@@ -28,8 +29,11 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - `90 Research and Roadmap`
 - Notes inside those subfolders may also use zero-padded numeric filename prefixes such as `010`, `020`, and `030` to expose reading order in the Obsidian explorer. Keep the note title clean and preserve the old unnumbered name as an `aliases` entry when renaming an existing note.
 - Keep the root almost empty. Leave `AGENTS.md`, `.obsidian`, and `images` at root; place notes inside the domain folders.
+- Treat `80 Knowledge Ops` as the operational layer for `full Karpathy` workflows. It is a runtime branch for ingest, draft maintenance, lint, and promotion, not the primary study path.
+- For `Knowledge Ops` work, treat `ingest` and `promote` as separate approvals by default. New-source processing may create raw intake entries, source notes, workspace drafts, and promotion candidates, but should not update canonical branch notes until the key takeaways have been discussed with the user and the user explicitly approves promotion.
 - `README.md` and localized publication files such as `README.es.md` are allowed at root as GitHub-facing onboarding documents for the vault.
 - Ensure all canonical notes, including new notes and migrated or normalized existing notes, use frontmatter with at least: `type`, `domain`, `audience`, `status`, and `last_reviewed`.
+- `Knowledge Ops` notes may also use optional lifecycle fields such as `knowledge_state`, `review_state`, `source_kind`, `target_domains`, `source_url`, `source_path`, and `canonical_targets` when the workflow needs them.
 - Treat `README.md` and localized publication files as repository documentation, not as canonical vault notes. They do not need note frontmatter.
 - Update `Note Style Guide.md` first whenever the authoring rules change.
 - After updating the style guide, sync the summary in this file so agents keep the short operational contract current.
@@ -63,10 +67,16 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - `90 Guides/Editorial Dashboard.md`
   - `00 Home/Vault Catalog.base`
   - `90 Guides/Editorial Review.base`
+- The `Knowledge Ops` extension stack is:
+  - `80 Knowledge Ops/90 Dashboards/010 Knowledge Ops Dashboard.md`
+  - `80 Knowledge Ops/90 Dashboards/Source Intake.base`
+  - `80 Knowledge Ops/90 Dashboards/Promotion Queue.base`
+  - `80 Knowledge Ops/90 Dashboards/Lint Review.base`
 - Keep Bases and Dataview aligned with the frontmatter schema. If note classes, domains, or review fields change, update the dashboard layer in the same work.
 - Use Bases for browsing, grouping, and quick editing by metadata.
 - Use Dataview for review queues, maintenance queries, and editorial checks that depend on note content.
 - Do not let dashboards become the primary study path. Readers should still enter through `Home.md` and the index notes.
+- Let `80 Knowledge Ops` support source intake and promotion into the canon without replacing the branch indexes as the human navigation layer.
 
 ## Curriculum And Navigation Rules
 - Each major index in `00 Home` should answer three questions clearly:
@@ -102,4 +112,4 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
 - When new note-writing conventions are introduced, record them in `Note Style Guide.md` with a dated changelog entry.
 
 ## Last Reviewed
-- 2026-04-18
+- 2026-04-21

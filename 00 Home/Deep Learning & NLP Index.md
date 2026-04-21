@@ -4,8 +4,9 @@ domain: dl-nlp
 audience:
   - learner
   - builder
+  - data-strategy
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Deep Learning & NLP Index
 
@@ -19,6 +20,9 @@ This index organizes the vault for deep learning, sequence modeling, and modern 
 
 > [!INFO] Best fit
 > Use this page if basic supervised ML already makes sense and you now want sequence models, language models, `RAG`, or the conceptual bridge into agentic systems.
+
+> [!IMPORTANT] Data strategy lens
+> Use this branch when the data shape and product constraints justify sequence models, language models, or retrieval-aware systems instead of stopping at a tabular baseline.
 
 > [!TIP] Prerequisites
 > [[Neural Networks]] is the real entry note for this branch. [[Linear Models]] is useful earlier background if you are still moving through the broader curriculum. [[RAG (Retrieval Augmented Generation)]] becomes useful later, but it is not required until you want retrieval-aware LLM systems or agentic system variants that depend on external knowledge.
@@ -63,3 +67,9 @@ flowchart TD
 
 > [!TIP] Quick route
 > If your end goal is modern LLM systems, the fastest conceptual path is Neural Networks -> LSTMs -> Attention -> Language Models -> RAG -> Agentic Systems.
+
+> [!TIP] Compiled knowledge workspace
+> Use [[80 Knowledge Ops/20 Domain Workspaces/04 Deep Learning & NLP/010 Deep Learning and NLP Knowledge Workspace|Deep Learning and NLP Knowledge Workspace]] when you are compiling sources, storing draft syntheses, or staging promotion candidates for this branch.
+
+## Last Reviewed
+- 2026-04-20

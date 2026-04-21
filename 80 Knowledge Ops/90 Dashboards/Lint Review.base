@@ -1,0 +1,39 @@
+filters:
+  and:
+    - file.ext == "md"
+    - domain == "knowledge-ops"
+    - review_state
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  type:
+    displayName: Type
+  knowledge_state:
+    displayName: Knowledge State
+  review_state:
+    displayName: Review State
+  target_domains:
+    displayName: Target Domains
+  last_reviewed:
+    displayName: Last Reviewed
+views:
+  - type: table
+    name: By Review State
+    groupBy:
+      property: review_state
+      direction: ASC
+    order:
+      - review_state
+      - knowledge_state
+      - file.name
+  - type: table
+    name: By Knowledge State
+    groupBy:
+      property: knowledge_state
+      direction: ASC
+    order:
+      - knowledge_state
+      - review_state
+      - file.name

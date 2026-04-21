@@ -4,8 +4,9 @@ domain: data-preparation
 audience:
   - learner
   - builder
+  - data-strategy
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Data Preparation Index
 
@@ -19,6 +20,9 @@ This index groups the notes needed before training most machine learning models.
 
 > [!INFO] Best fit
 > Use this page if your main issue is dirty data, weak features, or unreliable preprocessing assumptions. Skip directly to model notes only if the dataset is already well understood and well prepared.
+
+> [!IMPORTANT] Data strategy lens
+> This branch is where you decide what the data can safely support: imputation policy, encoding policy, scaling policy, and how much quality debt you can tolerate before model training.
 
 > [!TIP] Prerequisites
 > Start here if you can already distinguish numeric vs categorical variables. [[Categorical Data]], [[Normal Distribution]], [[Skewness]], and [[Outliers]] are the best fast primers before deeper preprocessing choices.
@@ -63,3 +67,9 @@ flowchart TD
 
 > [!TIP] Quick route
 > If the dataset has messy categories and nulls, read Types of Missing Data -> Data Imputation -> Data Encoding before touching model architecture.
+
+> [!TIP] Compiled knowledge workspace
+> Use [[80 Knowledge Ops/20 Domain Workspaces/02 Data Preparation/010 Data Preparation Knowledge Workspace|Data Preparation Knowledge Workspace]] when you want to ingest source material, compare multiple preprocessing approaches, or stage candidate edits before promoting them into canon.
+
+## Last Reviewed
+- 2026-04-20

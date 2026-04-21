@@ -5,7 +5,7 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Vault Dashboard
 
@@ -30,9 +30,10 @@ flowchart TD
 | View | Purpose | Open |
 | :--- | :--- | :--- |
 | `Home` | human-curated portal and study entry point | [[Home]] |
-| `Vault Catalog` | browse notes by domain, type, status, and review date | [[00 Home/Vault Catalog.base|Vault Catalog]] |
-| `Editorial Dashboard` | review debt, bridge-note drift, and missing-section checks | [[90 Guides/Editorial Dashboard.md|Editorial Dashboard]] |
-| `Editorial Review` | editorial Bases view for review queues and note classes | [[90 Guides/Editorial Review.base|Editorial Review]] |
+| `Vault Catalog` | browse notes by domain, type, status, and review date | [[00 Home/Vault Catalog.base\|Vault Catalog]] |
+| `Editorial Dashboard` | review debt, bridge-note drift, and missing-section checks | [[90 Guides/Editorial Dashboard\|Editorial Dashboard]] |
+| `Editorial Review` | editorial Bases view for review queues and note classes | [[90 Guides/Editorial Review.base\|Editorial Review]] |
+| `Knowledge Ops Dashboard` | operational control surface for intake, promotion, and lint | [[80 Knowledge Ops/90 Dashboards/010 Knowledge Ops Dashboard\|Knowledge Ops Dashboard]] |
 
 ## Bases Views
 ![[00 Home/Vault Catalog.base#By Domain]]
@@ -67,8 +68,17 @@ SORT last_reviewed DESC, file.name ASC
 LIMIT 10
 ```
 
+### Knowledge Ops Signals
+```dataview
+TABLE file.link AS Note, type AS Type, knowledge_state AS "Knowledge State", review_state AS "Review State"
+FROM "80 Knowledge Ops"
+WHERE type
+SORT file.name ASC
+LIMIT 12
+```
+
 ## Related Notes
-- Related: [[Home]], [[Machine Learning Index]], [[Data Preparation Index]], [[Deep Learning & NLP Index]], [[Agentic Systems Index]], [[90 Guides/Editorial Dashboard.md|Editorial Dashboard]]
+- Related: [[Home]], [[Machine Learning Index]], [[Data Preparation Index]], [[Deep Learning & NLP Index]], [[Agentic Systems Index]], [[90 Guides/Editorial Dashboard|Editorial Dashboard]], [[80 Knowledge Ops/90 Dashboards/010 Knowledge Ops Dashboard|Knowledge Ops Dashboard]]
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-20

@@ -92,7 +92,7 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[090 Multi-Agent Systems|Multi-Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection|Orchestration Trade-offs and Pattern Selection]]
-- Related: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[080 Applied Agentic Architecture Case Studies|Applied Agentic Architecture Case Studies]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
+- Related: [[010 Applied Agentic Architectures|Applied Agentic Architectures]], [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]], [[030 Human-in-the-Loop and Approval Flows|Human-in-the-Loop and Approval Flows]], [[100 Applied Agentic Architecture Case Studies|Applied Agentic Architecture Case Studies]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
 
 ## Sources
 - [A practical guide to building agents | OpenAI](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)

@@ -6,7 +6,7 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Machine Learning Index
 
@@ -20,6 +20,9 @@ This is the main machine-learning entry point for the vault as both a reference 
 
 > [!INFO] Best fit
 > Use this page if you want the broadest ML path: preprocessing -> model families -> metrics -> advanced branches. If your immediate problem is still in data quality, start one step upstream in [[Data Preparation Index]].
+
+> [!IMPORTANT] Data strategy lens
+> Use this branch to decide which model family fits the dataset, the governance constraints, and the downstream operating cost after preprocessing is in shape.
 
 > [!TIP] Prerequisites
 > If you are new to ML, skim [[Categorical Data]], [[Normal Distribution]], and [[Outliers]] first. This index assumes you can already reason about tabular data, feature preparation, and basic evaluation language.
@@ -69,3 +72,9 @@ flowchart TD
 
 > [!TIP] Quick route
 > If your goal is practical tabular ML, start with Data Preparation -> Linear Models -> Classification or Regression Metrics -> Tree-based Models. If your goal is modern LLM and agentic systems, continue from [[Deep Learning & NLP Index]] into [[Agentic Systems Index]].
+
+> [!TIP] Compiled knowledge workspace
+> Use [[80 Knowledge Ops/20 Domain Workspaces/03 Classical ML/010 Classical ML Knowledge Workspace|Classical ML Knowledge Workspace]] when you want to file source-backed comparisons, benchmark notes, or draft updates before they become canonical ML notes.
+
+## Last Reviewed
+- 2026-04-20

@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.ext == "md"
+    - domain == "knowledge-ops"
+    - knowledge_state == "canonical-candidate"
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  type:
+    displayName: Type
+  target_domains:
+    displayName: Target Domains
+  canonical_targets:
+    displayName: Canonical Targets
+  review_state:
+    displayName: Review State
+  last_reviewed:
+    displayName: Last Reviewed
+views:
+  - type: table
+    name: By Domain
+    groupBy:
+      property: target_domains
+      direction: ASC
+    order:
+      - target_domains
+      - review_state
+      - file.name
+  - type: table
+    name: By Review State
+    groupBy:
+      property: review_state
+      direction: ASC
+    order:
+      - review_state
+      - file.name

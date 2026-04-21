@@ -51,13 +51,14 @@ flowchart TD
 | [[Data Preparation Index]] | upstream preprocessing branch | the main problem is missingness, encoding, scaling, or imbalance after the foundations starter set |
 | [[Machine Learning Index]] | broad ML overview | you want the main path from prepared data into model families, evaluation, and advanced systems after the foundations starter set |
 | [[Deep Learning & NLP Index]] | advanced modeling branch | you want the bridge from neural networks into sequence models, LLMs, and `RAG` after the broader ML path |
-| [[Agentic Systems Index]] | advanced systems branch | you want systems with tools, planning, memory, decision economics, multi-agent patterns, software engineering agents, harness design, operator playbooks for `Claude Code`, `Codex`, and `OpenCode`, or applied architecture design across deeper internal tracks |
+| [[Agentic Systems Index]] | advanced systems branch | you want systems with tools, planning, memory, decision economics, multi-agent patterns, software engineering agents, harness design, operator playbooks for `Claude Code`, `Codex`, and `OpenCode`, knowledge and editorial agents, or applied architecture design across deeper internal tracks |
 
 ## Operational Views
 | Dashboard | Use |
 | :--- | :--- |
 | [[Vault Dashboard]] | browse the vault by metadata, review cadence, and note class |
 | [[Editorial Dashboard]] | inspect review queues, remaining bridge notes, and editorial exceptions |
+| [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]] | operate the vault as a source-ingest, draft, lint, and supervised-promotion system |
 
 ## How To Use This Vault
 ### Reference Mode
@@ -67,7 +68,7 @@ flowchart TD
 - Start with the curated foundations entry, then follow one of the indexes and the suggested paths in order.
 
 > [!TIP] Quick routes by profile
-> Learners should usually start with the curated foundations entry, then move into [[Data Preparation Index]] or [[Machine Learning Index]] depending on the topic. Builders can jump into [[Data Preparation Index]] or [[Agentic Systems Index]] depending on whether the task is model-building, software engineering agents, harness design, `Claude Code`, `Codex`, or `OpenCode` operating setup, computer use, or applied architecture work. `Data Strategy` readers should usually start with the curated foundations entry, then choose [[Data Preparation Index]] for data-readiness decisions or [[Agentic Systems Index]] for orchestration, operating-model, and ROI decisions. Inside `Agentic Systems`, the branch is organized as a shared core plus two specializations: `Software Engineering Agents` and `Applied Agentic Architectures`. The operator-playbook layer lives inside the software-engineering specialization rather than as a separate top-level branch.
+> Learners should usually start with the curated foundations entry, then move into [[Data Preparation Index]] or [[Machine Learning Index]] depending on the topic. Builders can jump into [[Data Preparation Index]] or [[Agentic Systems Index]] depending on whether the task is model-building, software engineering agents, harness design, `Claude Code`, `Codex`, or `OpenCode` operating setup, computer use, knowledge-base maintenance, or applied architecture work. `Data Strategy` readers should usually start with the curated foundations entry, then choose [[Data Preparation Index]] for data-readiness decisions or [[Agentic Systems Index]] for orchestration, operating-model, ROI, and compiled-knowledge decisions. Inside `Agentic Systems`, the branch is organized as a shared core plus two specializations: `Software Engineering Agents` and `Applied Agentic Architectures`. The operator-playbook layer lives inside the software-engineering specialization rather than as a separate top-level branch, and knowledge or editorial systems live inside the applied-architectures specialization. If you are operating the vault as a compounding knowledge system, use [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]] as the runtime layer, not as a replacement for the curriculum indexes.
 
 ## Folder Map
 | Folder | Meaning |
@@ -77,11 +78,12 @@ flowchart TD
 | `02 Data Preparation` | preprocessing, imputation, encoding, standardization, and imbalance |
 | `03 Classical ML` | metrics, tabular ML, and core model families |
 | `04 Deep Learning & NLP` | neural networks, sequence models, language models, and `RAG` |
-| `05 Agentic Systems` | agents, orchestration, evaluation, and research notes, organized as a shared core, a software-engineering specialization, an applied-architectures specialization, and a research subtrack, with a deeper operator-playbook layer inside software engineering |
+| `05 Agentic Systems` | agents, orchestration, evaluation, and research notes, organized as a shared core, a software-engineering specialization, an applied-architectures specialization, and a research subtrack, with a deeper operator-playbook layer inside software engineering and knowledge or editorial systems inside applied architectures |
+| `80 Knowledge Ops` | operational layer for raw source intake, source-note normalization, domain workspaces, promotion queues, and lint; supports the canon but is not a curriculum branch |
 | `90 Guides` | shared operating and authoring documentation |
 
 ## Related Notes
-- Related: [[Machine Learning Index]], [[Data Preparation Index]], [[Deep Learning & NLP Index]], [[Agentic Systems Index]], [[Vault Dashboard]], [[Note Style Guide]]
+- Related: [[Machine Learning Index]], [[Data Preparation Index]], [[Deep Learning & NLP Index]], [[Agentic Systems Index]], [[Vault Dashboard]], [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]], [[Note Style Guide]]
 
 ## Last Reviewed
 - 2026-04-20

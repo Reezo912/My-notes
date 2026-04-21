@@ -61,6 +61,7 @@ flowchart TD
 | how do I set up OpenCode well? | [[115 OpenCode Setup and Repo Contracts\|OpenCode Setup and Repo Contracts]] |
 | what belongs in repo instruction files? | [[120 Writing Effective CLAUDE and AGENTS Contracts\|Writing Effective CLAUDE and AGENTS Contracts]] |
 | when do I use skills, commands, or hooks? | [[130 Skills, Commands, and Hooks in Practice\|Skills, Commands, and Hooks in Practice]] |
+| how do I build a good Claude skill end to end? | [[135 Building Effective Skills for Claude\|Building Effective Skills for Claude]] |
 | how do I keep sessions and context healthy? | [[140 Context Engineering and Session Hygiene for Coding Agents\|Context Engineering and Session Hygiene for Coding Agents]] |
 | how do I run several sessions safely? | [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows\|Parallel Sessions, Worktrees, and Multi-Agent Workflows]] |
 | how do I design better tool surfaces? | [[160 Tool Design and MCP Integration in Practice\|Tool Design and MCP Integration in Practice]] |
@@ -98,7 +99,7 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[010 Software Engineering Agents|Software Engineering Agents]], [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
-- Related: [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]], [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[100 Claude Code Setup and Repo Contracts|Claude Code Setup and Repo Contracts]], [[110 Codex Setup and Repo Contracts|Codex Setup and Repo Contracts]], [[115 OpenCode Setup and Repo Contracts|OpenCode Setup and Repo Contracts]], [[120 Writing Effective CLAUDE and AGENTS Contracts|Writing Effective CLAUDE and AGENTS Contracts]], [[130 Skills, Commands, and Hooks in Practice|Skills, Commands, and Hooks in Practice]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[160 Tool Design and MCP Integration in Practice|Tool Design and MCP Integration in Practice]], [[170 Eval Hygiene for Agentic Coding Systems|Eval Hygiene for Agentic Coding Systems]]
+- Related: [[020 Repo Operating Model for Coding Agents|Repo Operating Model for Coding Agents]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]], [[050 Evaluating Software Engineering Agents|Evaluating Software Engineering Agents]], [[100 Claude Code Setup and Repo Contracts|Claude Code Setup and Repo Contracts]], [[110 Codex Setup and Repo Contracts|Codex Setup and Repo Contracts]], [[115 OpenCode Setup and Repo Contracts|OpenCode Setup and Repo Contracts]], [[120 Writing Effective CLAUDE and AGENTS Contracts|Writing Effective CLAUDE and AGENTS Contracts]], [[130 Skills, Commands, and Hooks in Practice|Skills, Commands, and Hooks in Practice]], [[135 Building Effective Skills for Claude|Building Effective Skills for Claude]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[160 Tool Design and MCP Integration in Practice|Tool Design and MCP Integration in Practice]], [[170 Eval Hygiene for Agentic Coding Systems|Eval Hygiene for Agentic Coding Systems]]
 
 ## Sources
 - [Claude Code: Best practices for agentic coding | Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices?curius=1527)
@@ -111,4 +112,4 @@ flowchart TD
 - See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

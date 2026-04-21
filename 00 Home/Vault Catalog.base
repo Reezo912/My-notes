@@ -13,6 +13,12 @@ properties:
     displayName: Type
   status:
     displayName: Status
+  knowledge_state:
+    displayName: Knowledge State
+  review_state:
+    displayName: Review State
+  source_kind:
+    displayName: Source Kind
   audience:
     displayName: Audience
   last_reviewed:
@@ -51,4 +57,11 @@ views:
     order:
       - status
       - domain
+      - file.name
+  - type: table
+    name: Knowledge Ops
+    filters: domain == "knowledge-ops"
+    order:
+      - knowledge_state
+      - review_state
       - file.name

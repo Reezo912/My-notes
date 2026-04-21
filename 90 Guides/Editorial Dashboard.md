@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-20
 ---
 # Editorial Dashboard
 
@@ -28,8 +28,9 @@ flowchart TD
 ## Maintenance Views
 | View | Purpose | Open |
 | :--- | :--- | :--- |
-| `Editorial Review` | grouped editorial Bases views by review date, status, and note class | [[90 Guides/Editorial Review.base|Editorial Review]] |
-| `Vault Dashboard` | top-level metadata portal and operational note browser | [[00 Home/Vault Dashboard.md|Vault Dashboard]] |
+| `Editorial Review` | grouped editorial Bases views by review date, status, and note class | [[90 Guides/Editorial Review.base\|Editorial Review]] |
+| `Vault Dashboard` | top-level metadata portal and operational note browser | [[00 Home/Vault Dashboard\|Vault Dashboard]] |
+| `Knowledge Ops Dashboard` | operational view for source intake, promotion candidates, and lint state | [[80 Knowledge Ops/90 Dashboards/010 Knowledge Ops Dashboard\|Knowledge Ops Dashboard]] |
 | `Note Style Guide` | canonical authoring rules, curriculum rules, and dashboard policy | [[Note Style Guide]] |
 | `AGENTS.md` | short operational contract for agents | [[AGENTS]] |
 
@@ -57,23 +58,27 @@ SORT domain ASC, file.name ASC
 
 ## Missing Body Sections
 ```dataviewjs
+const requiresSources = new Set(["concept", "research-log", "source", "policy"]);
+const requiresLastReviewed = new Set(["concept", "research-log", "index", "guide", "dashboard", "source", "policy", "ops-log"]);
 const rows = [];
-for (const page of dv.pages().where(p => p.type === "concept" || p.type === "research-log")) {
+for (const page of dv.pages().where(p => requiresSources.has(p.type) || requiresLastReviewed.has(p.type))) {
   const content = await dv.io.load(page.file.path);
   const hasSources = /^## Sources\b/m.test(content);
   const hasLastReviewed = /^## Last Reviewed\b/m.test(content);
-  if (!hasSources || !hasLastReviewed) {
+  const expectSources = requiresSources.has(page.type);
+  const expectLastReviewed = requiresLastReviewed.has(page.type);
+  if ((expectSources && !hasSources) || (expectLastReviewed && !hasLastReviewed)) {
     rows.push([
       page.file.link,
       page.domain,
-      hasSources ? "OK" : "Missing",
-      hasLastReviewed ? "OK" : "Missing",
+      expectSources ? (hasSources ? "OK" : "Missing") : "N/A",
+      expectLastReviewed ? (hasLastReviewed ? "OK" : "Missing") : "N/A",
     ]);
   }
 }
 
 if (!rows.length) {
-  dv.paragraph("All substantive notes currently include both `## Sources` and `## Last Reviewed` body sections.");
+  dv.paragraph("All audited notes currently include the body sections expected for their type.");
 } else {
   rows.sort((a, b) => String(a[1]).localeCompare(String(b[1])) || String(a[0]).localeCompare(String(b[0])));
   dv.table(["Note", "Domain", "Sources", "Body Last Reviewed"], rows);
@@ -90,4 +95,4 @@ LIMIT 10
 ```
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-20

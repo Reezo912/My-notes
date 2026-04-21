@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-18
+last_reviewed: 2026-04-20
 ---
 # Note Style Guide
 
@@ -30,6 +30,7 @@ This vault is a shared AI and ML knowledge base designed to work in two modes:
 - `03 Classical ML`: model families, metrics, and tabular ML notes
 - `04 Deep Learning & NLP`: neural networks, sequence models, NLP, language models, and `RAG`
 - `05 Agentic Systems`: agents, orchestration, evaluation, and research log notes
+- `80 Knowledge Ops`: operational layer for source intake, domain workspaces, promotion queues, and lint
 - `90 Guides`: shared documentation like this guide
 - `99 Archive`: deprecated or replaced notes only
 
@@ -44,6 +45,8 @@ Current example:
 Within those subfolders, notes may use zero-padded numeric filename prefixes such as `010`, `020`, and `030` to make reading order visible in Obsidian's file explorer. Keep the `# Title` clean and add an `aliases` entry with the unnumbered note name so existing wikilinks remain stable.
 
 Repository-facing publication files such as `README.md` and localized variants like `README.es.md` are allowed at root, but they are not canonical vault notes.
+
+`80 Knowledge Ops` is an operational branch, not a curriculum branch. Readers should still navigate by `Home.md` and the major indexes. `Knowledge Ops` exists to support ingest, draft maintenance, lint, and canonical promotion.
 
 ## Metadata Rules
 Use frontmatter on canonical notes.
@@ -65,9 +68,17 @@ last_reviewed: 2026-04-10
 ```
 
 Allowed values:
-- `type`: `index`, `concept`, `bridge`, `guide`, `research-log`, `dashboard`
-- `domain`: `home`, `foundations`, `data-preparation`, `classical-ml`, `dl-nlp`, `agentic-systems`, `guides`
+- `type`: `index`, `concept`, `bridge`, `guide`, `research-log`, `dashboard`, `source`, `ops-log`, `policy`
+- `domain`: `home`, `foundations`, `data-preparation`, `classical-ml`, `dl-nlp`, `agentic-systems`, `knowledge-ops`, `guides`
 - `status`: `draft`, `evergreen`, `roadmap`, `archived`
+
+Optional `Knowledge Ops` fields:
+- `knowledge_state`: `raw`, `normalized`, `draft`, `canonical-candidate`, `promoted`, `stale`, `archived`
+- `review_state`: `unreviewed`, `in-review`, `approved`, `rejected`
+- `source_kind`: `pdf`, `web-article`, `paper`, `book-chapter`, `video-transcript`, `podcast-transcript`, `github-repo`, `thread`, `meeting-note`, `other`
+- `target_domains`: list of target domains for routing or promotion
+- `source_url` and/or `source_path`
+- `canonical_targets`: optional list of likely canonical destinations
 
 ## Metadata Layer: Bases And Dataview
 Frontmatter is the canonical metadata source. The dashboard layer reads from it and should not introduce parallel classification.
@@ -84,11 +95,32 @@ Canonical dashboard files:
 - `00 Home/Vault Catalog.base`
 - `90 Guides/Editorial Review.base`
 
+Operational `Knowledge Ops` dashboards:
+- `80 Knowledge Ops/90 Dashboards/010 Knowledge Ops Dashboard.md`
+- `80 Knowledge Ops/90 Dashboards/Source Intake.base`
+- `80 Knowledge Ops/90 Dashboards/Promotion Queue.base`
+- `80 Knowledge Ops/90 Dashboards/Lint Review.base`
+
 Rules:
 - If note classes, domains, or review fields change, update the dashboard layer in the same change.
 - Prefer Bases for stable grouped views by `domain`, `type`, `status`, and `last_reviewed`.
 - Prefer Dataview for review debt, missing-section checks, and editorial maintenance.
 - Do not rely on folder paths as the primary curriculum. Use folder structure for maintainability and use indexes for the human learning path.
+
+## Knowledge Ops Workflow
+Use `80 Knowledge Ops` as the runtime layer for `full Karpathy` work:
+- `00 Intake/raw`: immutable source intake
+- `10 Source Notes`: one normalized note per source
+- `20 Domain Workspaces`: draft and synthesis layer by canonical domain
+- `30 Schemas and Policies`: operating contract for ingest, query, lint, and promotion
+- `40 Registries and Logs`: global index, activity log, promotion queue, lint queue, and canonical target map
+- `90 Dashboards`: Bases and Dataview views for operational maintenance
+
+Rules:
+- `80 Knowledge Ops` is agent-owned working infrastructure
+- canonical branches `01` through `05` remain human-supervised canon
+- do not promote meaningful canonical changes outside the explicit promotion workflow
+- use `knowledge_state` and `review_state` to model lifecycle without replacing the vault-wide `status` field
 
 ## Required Structure For Substantive Notes
 Substantive notes should usually follow this order:
@@ -267,6 +299,7 @@ Use **compact** for:
 ## Style Change Log
 | Date | Change | Rationale |
 | :--- | :--- | :--- |
+| 2026-04-20 | Added `80 Knowledge Ops` as the operational layer for full-Karpathy workflows, extended metadata with `knowledge_state`, `review_state`, and `source_kind`, and formalized the `raw -> source -> workspace -> promotion` model. | Turn the vault into a supervised, agent-maintained knowledge system without replacing the curated curriculum and canonical branch structure. |
 | 2026-04-18 | Formalized the multi-agent operating contract for this vault, including default role patterns, ownership rules, validation expectations, and closure rules. | Make multi-agent work explicit and safe for large content, navigation, and research changes without turning every task into ad hoc coordination. |
 | 2026-04-18 | Allowed numbered subfolders inside large branches, formalized track-based organization within `05 Agentic Systems`, and clarified that indexes remain the primary navigation layer over physical folders. | Support deeper curriculum branches without letting a flat file layout or raw folder browsing become the main study path. |
 | 2026-04-10 | Promoted older bridge notes into substantive notes, added Bases and Dataview dashboards, formalized curriculum blocks in major indexes, and required live Obsidian QA for navigation-heavy changes. | Bring the vault to a scaling checkpoint where content quality, metadata browsing, curriculum design, and visual QA all reinforce each other. |
@@ -274,4 +307,4 @@ Use **compact** for:
 | 2026-04-09 | Moved the vault to a high-visual authoring system for substantive and index notes; kept micro bridge notes compact; added Mermaid sizing policy and vertical-diagram preference. | Improve scanability in Obsidian while avoiding horizontal page scrolling and keeping bridge notes lightweight. |
 
 ## Last Reviewed
-- 2026-04-18
+- 2026-04-20

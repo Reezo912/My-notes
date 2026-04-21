@@ -62,6 +62,9 @@ flowchart TD
 7. add hooks once you know which risky actions must be enforced
 8. move multi-session work into named worktrees before parallelizing heavily
 
+> [!TIP] Skill-building boundary
+> This note is about setting up the Claude Code environment correctly. For how to design, test, and distribute better `skills` themselves, read [[135 Building Effective Skills for Claude|Building Effective Skills for Claude]].
+
 ## Permission Posture
 | Goal | Healthy Default | Notes |
 | :--- | :--- | :--- |
@@ -100,11 +103,12 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[090 Operating Agentic Coding Environments|Operating Agentic Coding Environments]], [[120 Writing Effective CLAUDE and AGENTS Contracts|Writing Effective CLAUDE and AGENTS Contracts]]
-- Related: [[130 Skills, Commands, and Hooks in Practice|Skills, Commands, and Hooks in Practice]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
+- Related: [[130 Skills, Commands, and Hooks in Practice|Skills, Commands, and Hooks in Practice]], [[135 Building Effective Skills for Claude|Building Effective Skills for Claude]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
 
 ## Sources
 - [Getting started with Claude Code | Anthropic Docs](https://docs.anthropic.com/en/docs/claude-code/setup)
 - [Claude Code best practices | Claude Code Docs](https://code.claude.com/docs/en/best-practices)
+- [Extend Claude with skills | Claude Code Docs](https://code.claude.com/docs/en/skills)
 - [Claude Code memory | Claude Code Docs](https://code.claude.com/docs/en/memory)
 - [Claude Code permissions | Claude Code Docs](https://code.claude.com/docs/en/permissions)
 - [Claude Code hooks guide | Claude Code Docs](https://code.claude.com/docs/en/hooks-guide)
@@ -114,4 +118,4 @@ flowchart TD
 - See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

@@ -57,6 +57,9 @@ Many agentic coding setups degrade because every new need gets pushed into the s
 | separate reviewer or researcher role | subagent or separate session |
 | broad work split across paths or modules | worktree-backed multi-agent workflow |
 
+> [!TIP] Surface choice vs skill design
+> This note answers `which surface should own the workflow?` Once the answer is `skill`, move to [[135 Building Effective Skills for Claude|Building Effective Skills for Claude]] for authoring, testing, and distribution.
+
 ### Small Stable Skill Vs Overgrown Skill
 | Skill Shape | Characteristics | Likely Outcome |
 | :--- | :--- | :--- |
@@ -80,10 +83,11 @@ Some teams use prompt-submission hooks to remind the model about relevant skills
 
 ## Related Notes
 - Prerequisites: [[090 Operating Agentic Coding Environments|Operating Agentic Coding Environments]], [[120 Writing Effective CLAUDE and AGENTS Contracts|Writing Effective CLAUDE and AGENTS Contracts]]
-- Related: [[100 Claude Code Setup and Repo Contracts|Claude Code Setup and Repo Contracts]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[065 Delegation and Role Specialization|Delegation and Role Specialization]], [[160 Tool Design and MCP Integration in Practice|Tool Design and MCP Integration in Practice]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
+- Related: [[100 Claude Code Setup and Repo Contracts|Claude Code Setup and Repo Contracts]], [[135 Building Effective Skills for Claude|Building Effective Skills for Claude]], [[140 Context Engineering and Session Hygiene for Coding Agents|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows|Parallel Sessions, Worktrees, and Multi-Agent Workflows]], [[065 Delegation and Role Specialization|Delegation and Role Specialization]], [[160 Tool Design and MCP Integration in Practice|Tool Design and MCP Integration in Practice]], [[030 Approvals, Permissions, and Sandboxing for Coding Agents|Approvals, Permissions, and Sandboxing for Coding Agents]]
 
 ## Sources
 - [Extend Claude with skills | Claude Code Docs](https://code.claude.com/docs/en/skills)
+- [[2026-01-26 The Complete Guide to Building Skills for Claude|The Complete Guide to Building Skills for Claude]]
 - [Hooks guide | Claude Code Docs](https://code.claude.com/docs/en/hooks-guide)
 - [CLI slash commands | OpenAI Developers](https://developers.openai.com/codex/cli/slash-commands)
 - [OpenCode Commands](https://opencode.ai/docs/commands/)
@@ -94,4 +98,4 @@ Some teams use prompt-submission hooks to remind the model about relevant skills
 - See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]]
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

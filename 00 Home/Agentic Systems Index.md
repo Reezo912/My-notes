@@ -35,11 +35,13 @@ Agentic systems are now a practical design space, not just a research curiosity.
 ```mermaid
 flowchart TD
     A["Language Models"] --> B["RAG"]
+    B --> KC["Knowledge Compilation vs RAG"]
     A --> W["When to Use Agentic Systems"]
     W --> R["Economic and ROI Analysis"]
     W --> C["AI Agents"]
     A --> C["AI Agents"]
     B --> C
+    KC --> C
     C --> D["Tool Use and Environment Interaction"]
     D --> L["MCP and Connector Protocols"]
     D --> M["Tool Ecosystems and Harness Engineering"]
@@ -54,6 +56,8 @@ flowchart TD
     G --> I["Evaluation, Observability, and Governance"]
     H --> I
     G --> J["Applied Agentic Architectures"]
+    J --> KA["Knowledge and Editorial Agents"]
+    KA --> KW["LLM Wiki and Agentic Knowledge Bases"]
     M --> K["Software Engineering Agents"]
     K --> O["Operating Agentic Coding Environments"]
     I --> J
@@ -63,6 +67,9 @@ flowchart TD
 
 > [!IMPORTANT] Three entry routes
 > This branch is intentionally layered. A `Data Strategy` reader can start with the decision layer, while builders and learners should usually read the shared core and then choose either the software-engineering specialization or the applied-architectures specialization.
+
+> [!TIP] Compiled knowledge workspace
+> Use [[80 Knowledge Ops/20 Domain Workspaces/05 Agentic Systems/010 Agentic Systems Knowledge Workspace|Agentic Systems Knowledge Workspace]] when you want to ingest new sources, capture draft syntheses, run promotion queues, or maintain the branch as a compounding knowledge base without treating the operational layer as a fourth specialization.
 
 ## Recommended Routes
 | Audience | Best Entry | Suggested Path |
@@ -78,15 +85,16 @@ flowchart TD
 ## Suggested Learning Paths
 ### Shared Core First
 1. [[020 AI Agents|AI Agents]]
-2. [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]]
-3. [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]]
-4. [[040 MCP and Connector Protocols|MCP and Connector Protocols]]
-5. [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
-6. [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]]
-7. [[070 Memory in Agent Systems|Memory in Agent Systems]]
-8. [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
-9. [[090 Multi-Agent Systems|Multi-Agent Systems]]
-10. [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
+2. [[025 Knowledge Compilation vs RAG|Knowledge Compilation vs RAG]]
+3. [[015 Economic and ROI Analysis for Agentic Systems|Economic and ROI Analysis for Agentic Systems]]
+4. [[030 Tool Use and Environment Interaction|Tool Use and Environment Interaction]]
+5. [[040 MCP and Connector Protocols|MCP and Connector Protocols]]
+6. [[050 Tool Ecosystems and Harness Engineering|Tool Ecosystems and Harness Engineering]]
+7. [[060 Planning and Control Flow in Agent Systems|Planning and Control Flow in Agent Systems]]
+8. [[070 Memory in Agent Systems|Memory in Agent Systems]]
+9. [[080 Agent Architectures and Orchestration Patterns|Agent Architectures and Orchestration Patterns]]
+10. [[090 Multi-Agent Systems|Multi-Agent Systems]]
+11. [[100 Evaluation, Observability, and Governance for Agent Systems|Evaluation, Observability, and Governance for Agent Systems]]
 
 ### Then Choose One Specialization
 | Reader | Best Specialization | Start Here |
@@ -94,6 +102,7 @@ flowchart TD
 | `Data Strategy` | `20 Applied Agentic Architectures` | [[010 When to Use Agentic Systems\|When to Use Agentic Systems]] -> [[015 Economic and ROI Analysis for Agentic Systems\|Economic and ROI Analysis for Agentic Systems]] -> [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] |
 | Builders working in repos | `10 Software Engineering Agents` | [[010 Software Engineering Agents\|Software Engineering Agents]] |
 | Builders shaping proposals or pilots | `20 Applied Agentic Architectures` | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] |
+| Builders maintaining notes, wikis, or research bases | `20 Applied Agentic Architectures` | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] -> [[085 Knowledge and Editorial Agents\|Knowledge and Editorial Agents]] |
 | Learners after the core | choose one specialization and finish it before the other | [[010 Software Engineering Agents\|Software Engineering Agents]] or [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] |
 
 > [!WARNING] Do not start with multi-agent by default
@@ -122,6 +131,7 @@ flowchart TD
 | [[010 When to Use Agentic Systems\|When to Use Agentic Systems]] | executive-first decision note |
 | [[015 Economic and ROI Analysis for Agentic Systems\|Economic and ROI Analysis for Agentic Systems]] | business-case and operating-economics note |
 | [[020 AI Agents\|AI Agents]] | branch foundation |
+| [[025 Knowledge Compilation vs RAG\|Knowledge Compilation vs RAG]] | bridge between retrieval and durable compiled knowledge |
 | [[030 Tool Use and Environment Interaction\|Tool Use and Environment Interaction]] | tool schemas, permissions, and reusable tool or app surfaces |
 | [[040 MCP and Connector Protocols\|MCP and Connector Protocols]] | protocol and product-surface layer for reusable integrations |
 | [[050 Tool Ecosystems and Harness Engineering\|Tool Ecosystems and Harness Engineering]] | harness layer for skills, subagents, hooks, permissions, and isolation |
@@ -157,7 +167,7 @@ flowchart TD
 | :--- | :--- | :--- |
 | Core handoff | [[010 Software Engineering Agents\|Software Engineering Agents]], [[030 Tool Use and Environment Interaction\|Tool Use and Environment Interaction]], [[050 Tool Ecosystems and Harness Engineering\|Tool Ecosystems and Harness Engineering]], [[090 Operating Agentic Coding Environments\|Operating Agentic Coding Environments]] | understand the domain, tool surface, and operating stack before optimizing tools |
 | Setup | [[120 Writing Effective CLAUDE and AGENTS Contracts\|Writing Effective CLAUDE and AGENTS Contracts]], [[100 Claude Code Setup and Repo Contracts\|Claude Code Setup and Repo Contracts]], [[110 Codex Setup and Repo Contracts\|Codex Setup and Repo Contracts]], [[115 OpenCode Setup and Repo Contracts\|OpenCode Setup and Repo Contracts]] | establish repo contracts and safe defaults across the main coding-agent surfaces |
-| Workflow | [[130 Skills, Commands, and Hooks in Practice\|Skills, Commands, and Hooks in Practice]], [[140 Context Engineering and Session Hygiene for Coding Agents\|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows\|Parallel Sessions, Worktrees, and Multi-Agent Workflows]] | run one or more sessions cleanly with less context drift and merge friction |
+| Workflow | [[130 Skills, Commands, and Hooks in Practice\|Skills, Commands, and Hooks in Practice]], [[135 Building Effective Skills for Claude\|Building Effective Skills for Claude]], [[140 Context Engineering and Session Hygiene for Coding Agents\|Context Engineering and Session Hygiene for Coding Agents]], [[150 Parallel Sessions, Worktrees, and Multi-Agent Workflows\|Parallel Sessions, Worktrees, and Multi-Agent Workflows]] | run one or more sessions cleanly with less context drift, stronger skills, and lower merge friction |
 | Mastery | [[160 Tool Design and MCP Integration in Practice\|Tool Design and MCP Integration in Practice]], [[170 Eval Hygiene for Agentic Coding Systems\|Eval Hygiene for Agentic Coding Systems]], [[060 Building Coding Agent Harnesses\|Building Coding Agent Harnesses]], [[080 Operating Coding Agents in Teams\|Operating Coding Agents in Teams]] | treat the environment, not only the model, as engineering infrastructure |
 
 ## Applied Agentic Architectures Track
@@ -165,8 +175,8 @@ flowchart TD
 | :--- | :--- | :--- |
 | Core handoff | [[020 AI Agents\|AI Agents]], [[030 Tool Use and Environment Interaction\|Tool Use and Environment Interaction]], [[050 Tool Ecosystems and Harness Engineering\|Tool Ecosystems and Harness Engineering]], [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]], [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | shared trunk required before the specialization track |
 | Apprenticeship | [[010 Applied Agentic Architectures\|Applied Agentic Architectures]], [[020 Architecture Design Methods for Agent Systems\|Architecture Design Methods for Agent Systems]], [[030 Human-in-the-Loop and Approval Flows\|Human-in-the-Loop and Approval Flows]] | design sound proposals and reject unnecessary complexity |
-| Advanced | [[040 Validation and Eval Design for Agent Architectures\|Validation and Eval Design for Agent Architectures]], [[050 Proposal-to-Production for Agent Systems\|Proposal-to-Production for Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection\|Orchestration Trade-offs and Pattern Selection]], [[065 Delegation and Role Specialization\|Delegation and Role Specialization]] | move a design into pilot with real promotion criteria |
-| Mastery | [[070 Reliability, Checkpoints, and Recovery in Agent Systems\|Reliability, Checkpoints, and Recovery in Agent Systems]], [[075 Computer Use and GUI Agents\|Computer Use and GUI Agents]], [[080 Applied Agentic Architecture Case Studies\|Applied Agentic Architecture Case Studies]], [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]], [[090 Multi-Agent Systems\|Multi-Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | review, govern, and evolve architectures in production |
+| Advanced | [[040 Validation and Eval Design for Agent Architectures\|Validation and Eval Design for Agent Architectures]], [[050 Proposal-to-Production for Agent Systems\|Proposal-to-Production for Agent Systems]], [[060 Orchestration Trade-offs and Pattern Selection\|Orchestration Trade-offs and Pattern Selection]], [[065 Delegation and Role Specialization\|Delegation and Role Specialization]], [[085 Knowledge and Editorial Agents\|Knowledge and Editorial Agents]], [[090 LLM Wiki and Agentic Knowledge Bases\|LLM Wiki and Agentic Knowledge Bases]] | move a design into pilot with real promotion criteria, including compiled knowledge systems when the artifact itself matters |
+| Mastery | [[070 Reliability, Checkpoints, and Recovery in Agent Systems\|Reliability, Checkpoints, and Recovery in Agent Systems]], [[075 Computer Use and GUI Agents\|Computer Use and GUI Agents]], [[085 Knowledge and Editorial Agents\|Knowledge and Editorial Agents]], [[090 LLM Wiki and Agentic Knowledge Bases\|LLM Wiki and Agentic Knowledge Bases]], [[095 Editorial Review Loops for AI-Maintained Knowledge\|Editorial Review Loops for AI-Maintained Knowledge]], [[100 Applied Agentic Architecture Case Studies\|Applied Agentic Architecture Case Studies]], [[080 Agent Architectures and Orchestration Patterns\|Agent Architectures and Orchestration Patterns]], [[090 Multi-Agent Systems\|Multi-Agent Systems]], [[100 Evaluation, Observability, and Governance for Agent Systems\|Evaluation, Observability, and Governance for Agent Systems]] | review, govern, and evolve architectures in production |
 
 ## Folder Map
 | Folder | Role |
@@ -177,6 +187,7 @@ flowchart TD
 | `05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks` | internal subline for setup and operating playbooks for `Claude Code`, `Codex`, and `OpenCode` |
 | `05 Agentic Systems/20 Applied Agentic Architectures` | architecture-design track from proposal to production |
 | `05 Agentic Systems/90 Research and Roadmap` | source log, research watchlist, and roadmap-oriented material |
+| `80 Knowledge Ops/20 Domain Workspaces/05 Agentic Systems` | operational workspace for ingest, drafts, candidate syntheses, lint, and supervised promotion into canon |
 
 ## Future Roadmap
 ### Phase 3
@@ -203,4 +214,4 @@ flowchart TD
 - See [[010 Agentic Systems Sources and Research Log|Agentic Systems Sources and Research Log]] for the full research baseline, including canonical papers, surveys, and current official docs.
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21
