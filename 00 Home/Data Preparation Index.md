@@ -6,7 +6,7 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Data Preparation Index
 
@@ -26,6 +26,13 @@ This index groups the notes needed before training most machine learning models.
 
 > [!TIP] Prerequisites
 > Start here if you can already distinguish numeric vs categorical variables. [[Categorical Data]], [[Normal Distribution]], [[Skewness]], and [[Outliers]] are the best fast primers before deeper preprocessing choices.
+
+## Best Route By Audience
+| Audience | Start Here | Do Not Start Here If | Then Go To |
+| :--- | :--- | :--- | :--- |
+| `Learner` | this index -> [[Categorical Data]] -> [[Types of Missing Data]] | you already understand the dataset and only need model-family choice | [[Machine Learning Index]], [[Linear Models]], or [[Tree-based Models]] |
+| `Builder` | this index -> [[Types of Missing Data]], [[Data Imputation]], [[Data Encoding]], and [[Data Standardization]] | the main bottleneck is no longer data quality, missingness, or preprocessing policy | [[Machine Learning Index]] or direct model notes once the pipeline is stable |
+| `Data Strategy` | this index -> quality debt, imputation policy, encoding policy, and scaling policy | the main decision is already model architecture, LLM product fit, or agent operating model rather than data readiness | [[Machine Learning Index]] after the data-readiness policy is clear |
 
 ## Study Path
 ```mermaid
@@ -72,4 +79,4 @@ flowchart TD
 > Use [[80 Knowledge Ops/20 Domain Workspaces/02 Data Preparation/010 Data Preparation Knowledge Workspace|Data Preparation Knowledge Workspace]] when you want to ingest source material, compare multiple preprocessing approaches, or stage candidate edits before promoting them into canon.
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

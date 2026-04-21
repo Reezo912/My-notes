@@ -6,7 +6,7 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Agentic Systems Index
 
@@ -66,17 +66,17 @@ flowchart TD
 ```
 
 > [!IMPORTANT] Three entry routes
-> This branch is intentionally layered. A `Data Strategy` reader can start with the decision layer, while builders and learners should usually read the shared core and then choose either the software-engineering specialization or the applied-architectures specialization.
+> This branch is intentionally layered. Use the audience table below to pick the right starting note, then read the shared core before committing to a specialization.
+
+## Best Route By Audience
+| Audience | Start Here | Do Not Start Here If | Then Go To |
+| :--- | :--- | :--- | :--- |
+| `Learner` | [[020 AI Agents\|AI Agents]] for the shared core | you still need the ML or LLM prerequisites, or the problem is mainly data preparation or model selection | shared core -> one specialization -> the other only if needed |
+| `Builder` | [[020 AI Agents\|AI Agents]] for the shared core, then [[010 Software Engineering Agents\|Software Engineering Agents]] or [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] | the real problem is still data readiness, baseline modeling, or a plain LLM or `RAG` app with no tool or control-flow complexity | shared core -> software-engineering specialization or applied-architectures specialization |
+| `Data Strategy` | [[010 When to Use Agentic Systems\|When to Use Agentic Systems]] -> [[015 Economic and ROI Analysis for Agentic Systems\|Economic and ROI Analysis for Agentic Systems]] | the organization still needs to settle data readiness, baseline model viability, or whether a simpler workflow is good enough | shared architecture basics -> governance -> [[010 Applied Agentic Architectures\|Applied Agentic Architectures]] |
 
 > [!TIP] Compiled knowledge workspace
 > Use [[80 Knowledge Ops/20 Domain Workspaces/05 Agentic Systems/010 Agentic Systems Knowledge Workspace|Agentic Systems Knowledge Workspace]] when you want to ingest new sources, capture draft syntheses, run promotion queues, or maintain the branch as a compounding knowledge base without treating the operational layer as a fourth specialization.
-
-## Recommended Routes
-| Audience | Best Entry | Suggested Path |
-| :--- | :--- | :--- |
-| `Data Strategy` | [[010 When to Use Agentic Systems\|When to Use Agentic Systems]] | decision -> economics -> shared architecture basics -> governance -> applied architectures when the use case needs a real proposal |
-| Builders / engineers | [[020 AI Agents\|AI Agents]] | shared core -> choose `Software Engineering Agents` for coding work or `Applied Agentic Architectures` for architecture design |
-| Learners / interns | [[020 AI Agents\|AI Agents]] | shared core -> choose one specialization instead of trying to read every branch in one pass |
 
 ## Prerequisites
 > [!TIP] Main prerequisite

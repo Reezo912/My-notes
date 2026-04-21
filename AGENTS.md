@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # AGENTS.md
 
@@ -35,6 +35,7 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
 - Ensure all canonical notes, including new notes and migrated or normalized existing notes, use frontmatter with at least: `type`, `domain`, `audience`, `status`, and `last_reviewed`.
 - `Knowledge Ops` notes may also use optional lifecycle fields such as `knowledge_state`, `review_state`, `source_kind`, `target_domains`, `source_url`, `source_path`, and `canonical_targets` when the workflow needs them.
 - Treat `README.md` and localized publication files as repository documentation, not as canonical vault notes. They do not need note frontmatter.
+- Treat `audience` as a real navigation contract. Use `learner` for guided study and prerequisite-driven notes, `builder` for implementation and operating guidance, and `data-strategy` for decision, ROI, governance, and operating-model content.
 - Update `Note Style Guide.md` first whenever the authoring rules change.
 - After updating the style guide, sync the summary in this file so agents keep the short operational contract current.
 
@@ -51,8 +52,9 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
 - Prefer native Obsidian callouts, tables, and Mermaid over screenshots.
 - Keep Mermaid diagrams vertical when labels are long and avoid page-level horizontal scrolling.
 - Treat frontmatter as the canonical metadata layer. Keep `type`, `domain`, `audience`, `status`, and `last_reviewed` accurate whenever notes are created, promoted, moved, or materially rewritten.
-- Keep `00 Home/Home.md` and the four top-level indexes as the main navigation system. Dashboards and Bases support this layer, but should not replace it.
+- Keep `00 Home/Home.md` audience-first. `learner`, `builder`, and `data-strategy` should be the first visible routes, with the four top-level indexes acting as the second navigation layer. Dashboards and Bases support this layer, but should not replace it.
 - Treat subfolders inside a branch as maintenance support, not as the primary learning path. Readers should still enter through `Home.md`, the branch index, and the track hubs.
+- Do not use `data-strategy` as a synonym for "important." Reserve it for notes that genuinely help decision-making, economics, governance, rollout, or operating-model work.
 
 ## Required Visual Rules
 - Substantive notes should usually have 3 to 5 meaningful callouts.
@@ -83,6 +85,7 @@ This vault uses [[Note Style Guide]] as the canonical style reference for both h
   - who the branch is for
   - what the prerequisites are
   - what the branch leads to next
+- Each major index in `00 Home` should also include `Best Route By Audience` so `learner`, `builder`, and `data-strategy` readers can see where to start, when not to start there, and where to continue next.
 - When a branch expands, update both the relevant index and `Home.md`.
 - Keep learning progression coherent across the vault:
   - foundations -> data preparation -> classical ML -> deep learning and NLP -> agentic systems
