@@ -6,7 +6,13 @@ Este repositorio es un vault de Obsidian con notas sobre inteligencia artificial
 
 Está diseñado para funcionar en dos modos:
 - **Modo referencia**: entrar en una nota concreta y entender el concepto rápido.
-- **Modo estudio**: empezar por la capa de índices y seguir rutas de aprendizaje guiadas.
+- **Modo estudio**: empezar por la capa de `Home` e índices y seguir rutas de aprendizaje guiadas.
+
+## Elige Tu Ruta
+Este vault está organizado para tres audiencias:
+- **Learner**: empieza en [`00 Home/Home.md`](./00%20Home/Home.md), usa el bloque curado de foundations y después sigue los índices principales en secuencia.
+- **Builder**: empieza en [`00 Home/Home.md`](./00%20Home/Home.md), luego entra en [`00 Home/Data Preparation Index.md`](./00%20Home/Data%20Preparation%20Index.md) para problemas de calidad de datos o en [`00 Home/Agentic Systems Index.md`](./00%20Home/Agentic%20Systems%20Index.md) para sistemas con herramientas, coding agents y arquitecturas aplicadas.
+- **Data Strategy**: empieza en [`00 Home/Home.md`](./00%20Home/Home.md), luego usa [`00 Home/Data Preparation Index.md`](./00%20Home/Data%20Preparation%20Index.md) para decisiones de data readiness y política de datos o [`00 Home/Agentic Systems Index.md`](./00%20Home/Agentic%20Systems%20Index.md) para ROI, governance y operating model. Usa los índices de ML y DL/NLP cuando necesites profundizar en tradeoffs de modelo.
 
 ## Inicio Rápido
 1. Clona o descarga este repositorio.
@@ -22,10 +28,10 @@ Si es tu primera vez con Obsidian, sigue esta secuencia:
 4. Selecciona la carpeta descargada del repositorio.
 5. Cuando se abra el vault, empieza en [`00 Home/Home.md`](./00%20Home/Home.md).
 
-## Instalación de Plugins Para Usuarios Nuevos
-El vault se puede leer sin plugins extra, pero la experiencia completa depende de un plugin core y un plugin community.
+## Modelo De Plugins
+Este repositorio incluye una configuración compartida de `.obsidian`. La base de conocimiento se puede leer sin community plugins, pero la capa de metadata y algunas comodidades del workspace sí dependen de plugins.
 
-### 1. Activar Bases
+### Obligatorio Para La Capa De Metadata
 `Bases` es un plugin core de Obsidian.
 
 1. Abre **Settings**.
@@ -37,7 +43,7 @@ Lo necesitas para:
 - [`00 Home/Vault Catalog.base`](./00%20Home/Vault%20Catalog.base)
 - [`90 Guides/Editorial Review.base`](./90%20Guides/Editorial%20Review.base)
 
-### 2. Activar los Community Plugins
+### Activar Los Community Plugins
 `Dataview` es un community plugin. Por defecto, Obsidian mantiene los community plugins desactivados en Restricted Mode.
 
 1. Abre **Settings**.
@@ -48,7 +54,7 @@ Lo necesitas para:
 Referencia oficial de seguridad:
 - [Obsidian Plugin Security](https://obsidian.md/help/plugin-security)
 
-### 3. Activar Dataview
+### Activar Dataview
 Este repositorio ya incluye los archivos del plugin Dataview en `.obsidian/plugins/dataview`, pero Obsidian igualmente necesita que el plugin quede activado en tu vault local.
 
 Si Dataview no aparece activo automáticamente:
@@ -69,20 +75,24 @@ Lo necesitas para:
 - [`00 Home/Vault Dashboard.md`](./00%20Home/Vault%20Dashboard.md)
 - [`90 Guides/Editorial Dashboard.md`](./90%20Guides/Editorial%20Dashboard.md)
 
-## Configuración Recomendada De Obsidian
-Para la experiencia completa, usa una versión reciente de Obsidian y mantén la carpeta `.obsidian` incluida en el repositorio.
+### Community Plugins Incluidos En `.obsidian`
+Estos plugins están presentes en la configuración compartida del vault:
+- `dataview`
+- `editing-toolbar`
+- `obsidian-excalidraw-plugin`
+- `obsidian-git`
+- `obsidian-outliner`
+- `obsidian-tasks-plugin`
+- `quickadd`
+- `table-editor-obsidian`
+- `templater-obsidian`
 
-### Obligatorio Para La Funcionalidad Completa
-- **Dataview** community plugin: necesario para los dashboards en:
-  - [`00 Home/Vault Dashboard.md`](./00%20Home/Vault%20Dashboard.md)
-  - [`90 Guides/Editorial Dashboard.md`](./90%20Guides/Editorial%20Dashboard.md)
-- **Bases** core plugin: usado por:
-  - [`00 Home/Vault Catalog.base`](./00%20Home/Vault%20Catalog.base)
-  - [`90 Guides/Editorial Review.base`](./90%20Guides/Editorial%20Review.base)
+Estos plugins no son necesarios para seguir las rutas por audiencia, leer las notas canónicas o usar los índices principales. Están incluidos para el workspace del autor y para flujos opcionales. Activarlos sigue siendo una decisión de confianza del usuario.
 
-### Opcional Pero Recomendado
-- Mantener el `workspace` incluido si quieres la apertura guiada del vault.
-- Mantener el snippet de Mermaid si quieres que los diagramas no desborden el ancho del panel.
+### Configuración Recomendada De Obsidian
+- Mantén la carpeta `.obsidian` incluida si quieres el comportamiento compartido del workspace.
+- Activa `Bases` y `Dataview` si quieres la capa de metadata y dashboards.
+- Si prefieres una instalación mínima, deja los community plugins apagados salvo `Dataview`.
 
 ## Qué Pasa Si No Activas Los Plugins
 - Sin **Bases**, los archivos `.base` no serán útiles.
@@ -99,12 +109,13 @@ Estas partes funcionan como notas Markdown normales aunque no tengas Dataview:
 
 Si Dataview no está activado, el vault sigue siendo usable, pero los dashboards pierden parte de su valor.
 
-## Por Dónde Empezar
-- [`00 Home/Home.md`](./00%20Home/Home.md): portal principal
-- [`00 Home/Machine Learning Index.md`](./00%20Home/Machine%20Learning%20Index.md): ruta general de ML
-- [`00 Home/Data Preparation Index.md`](./00%20Home/Data%20Preparation%20Index.md): rama de preprocesado
-- [`00 Home/Deep Learning & NLP Index.md`](./00%20Home/Deep%20Learning%20%26%20NLP%20Index.md): deep learning, NLP, LLMs y RAG
-- [`00 Home/Agentic Systems Index.md`](./00%20Home/Agentic%20Systems%20Index.md): agentes, orquestación y sistemas multiagente
+## Atajos Por Rama
+- [`00 Home/Home.md`](./00%20Home/Home.md): portal principal orientado por audiencia
+- [`00 Home/Data Preparation Index.md`](./00%20Home/Data%20Preparation%20Index.md): rama de preprocesado, calidad de datos y data readiness
+- [`00 Home/Machine Learning Index.md`](./00%20Home/Machine%20Learning%20Index.md): ruta central de ML desde datos preparados hacia familias de modelo y métricas
+- [`00 Home/Deep Learning & NLP Index.md`](./00%20Home/Deep%20Learning%20%26%20NLP%20Index.md): deep learning, NLP, language models y `RAG`
+- [`00 Home/Agentic Systems Index.md`](./00%20Home/Agentic%20Systems%20Index.md): herramientas, planificación, memoria, orquestación, coding agents y arquitecturas aplicadas
+- [`80 Knowledge Ops/010 Knowledge Ops.md`](./80%20Knowledge%20Ops/010%20Knowledge%20Ops.md): capa operativa para ingest, drafts, lint y promoción supervisada
 
 ## Estructura Del Vault
 - `00 Home`: portal principal, índices, dashboards y vistas de Bases
@@ -112,7 +123,8 @@ Si Dataview no está activado, el vault sigue siendo usable, pero los dashboards
 - `02 Data Preparation`: encoding, imputación, escalado y datasets desbalanceados
 - `03 Classical ML`: métricas, modelos lineales, árboles y ML tabular
 - `04 Deep Learning & NLP`: redes neuronales, secuencias, NLP, language models y RAG
-- `05 Agentic Systems`: agentes, tool use, planificación, memoria, orquestación y evaluación
+- `05 Agentic Systems`: agentes, tool use, planificación, memoria, orquestación, evaluación y tracks de especialización
+- `80 Knowledge Ops`: capa operativa para intake, source notes, domain workspaces, promotion queues y lint
 - `90 Guides`: guía de estilo y dashboard editorial
 - `99 Archive`: reservado para notas obsoletas
 
@@ -124,5 +136,5 @@ Si quieres extender o mantener el vault, usa:
 ## Notas Sobre Portabilidad
 - Cualquier usuario de Obsidian puede abrir el vault directamente.
 - El archivo `.obsidian/workspace.json` es opinado; si alguien prefiere otro layout local, puede cambiarlo sin afectar el contenido.
-- Parte del comportamiento visual depende del tema, de los plugins y de la configuración local de Obsidian.
-- Los nombres exactos de algunos menús pueden variar ligeramente entre versiones, pero el flujo general es el mismo: abrir el vault, activar `Bases` y después activar `Dataview`.
+- Parte del comportamiento visual depende del tema, de los plugins y de la configuración local.
+- Los nombres exactos de algunos menús pueden variar ligeramente entre versiones, pero el flujo general es el mismo: abrir el vault, activar `Bases` si quieres vistas de Bases y después activar `Dataview` si quieres dashboards.

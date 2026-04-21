@@ -1,12 +1,12 @@
 ---
 type: index
-domain: home
+domain: classical-ml
 audience:
   - learner
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Machine Learning Index
 
@@ -26,6 +26,13 @@ This is the main machine-learning entry point for the vault as both a reference 
 
 > [!TIP] Prerequisites
 > If you are new to ML, skim [[Categorical Data]], [[Normal Distribution]], and [[Outliers]] first. This index assumes you can already reason about tabular data, feature preparation, and basic evaluation language.
+
+## Best Route By Audience
+| Audience | Start Here | Do Not Start Here If | Then Go To |
+| :--- | :--- | :--- | :--- |
+| `Learner` | this index after the foundations starter set and [[Data Preparation Index]] | data quality is still unresolved or you mainly need sequence and LLM concepts | [[Deep Learning & NLP Index]] and later [[Agentic Systems Index]] |
+| `Builder` | this index after [[Data Preparation Index]] to choose a baseline, a model family, and the right metrics | the real problem is still preprocessing debt, or you already know you need sequence models or LLM systems | direct model notes, then [[Deep Learning & NLP Index]] or [[Agentic Systems Index]] as needed |
+| `Data Strategy` | this index when deciding which model family, evaluation frame, and governance tradeoff fit the dataset | the dataset is not ready yet, or the question is already about agent economics or operating model | [[Deep Learning & NLP Index]] for sequence or LLM justification, or [[Agentic Systems Index]] for systems and governance |
 
 ## Study Path
 ```mermaid
@@ -77,4 +84,4 @@ flowchart TD
 > Use [[80 Knowledge Ops/20 Domain Workspaces/03 Classical ML/010 Classical ML Knowledge Workspace|Classical ML Knowledge Workspace]] when you want to file source-backed comparisons, benchmark notes, or draft updates before they become canonical ML notes.
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

@@ -4,7 +4,7 @@ domain: guides
 audience:
   - builder
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Note Style Guide
 
@@ -80,6 +80,21 @@ Optional `Knowledge Ops` fields:
 - `source_url` and/or `source_path`
 - `canonical_targets`: optional list of likely canonical destinations
 
+## Audience Contract
+The `audience` field is a navigation contract, not decorative metadata. Use it to signal who should confidently enter a note and what kind of help they should expect from it.
+
+| Audience | Use When | Main Reader Question |
+| :--- | :--- | :--- |
+| `learner` | the note supports guided study, shared mental models, prerequisites, or reading order | "How do I understand this in sequence?" |
+| `builder` | the note helps design, implement, operate, validate, or troubleshoot a real system or workflow | "How do I use this to build or run something?" |
+| `data-strategy` | the note supports decision-making about investment, readiness, ROI, governance, rollout, or operating model | "Should we do this, and under what constraints?" |
+
+Rules:
+- `builder` can be broad, but do not use it as an automatic default when the note does not materially help implementation or operations.
+- `learner` should appear on index notes and substantive notes that genuinely teach a sequence, a prerequisite chain, or a shared conceptual foundation.
+- `data-strategy` should be used deliberately. Add it only when the note contains decision framing, economics, governance, rollout, or operating-model guidance that a strategy reader can act on directly.
+- Revisit `audience` whenever a note gains or loses an executive lens, a study-path role, or practical operator guidance.
+
 ## Metadata Layer: Bases And Dataview
 Frontmatter is the canonical metadata source. The dashboard layer reads from it and should not introduce parallel classification.
 
@@ -131,7 +146,7 @@ Substantive notes should usually follow this order:
 5. core concepts or mechanics
 6. tradeoffs, pitfalls, or decision rules
 7. related notes
-8. source section when provenance matters
+8. `Sources` section when provenance matters
 
 ## Visual Grammar
 ### High Visual Density
@@ -194,8 +209,11 @@ Each major index in `00 Home` should answer:
 - who the branch is for
 - what the prerequisites are
 - what comes next after the branch
+- how `learner`, `builder`, and `data-strategy` should enter it
 
 Rules:
+- Keep `Home.md` audience-first. The first visible routes should be `learner`, `builder`, and `data-strategy`, with branch indexes presented as the second navigation layer.
+- Each major index should include a visible `Best Route By Audience` section with the same three questions answered for each role: where to start, when not to start there, and where to continue next.
 - Keep prerequisite blocks compact and explicit.
 - Keep a short `Where This Leads` or `Read Next` block in each major index.
 - Let `Home.md` act as the global portal and each index act as a branch-specific guide.
@@ -241,7 +259,7 @@ Rules:
   - summarize what each review or research pass concluded and close sub-agents once they are no longer needed
 
 ## Source And Citation Rules
-- Use a `Source` section when the note is meaningfully derived from a book, paper, or canonical technical source.
+- Use a `## Sources` section when the note is meaningfully derived from a book, paper, or canonical technical source.
 - Light citations are enough; the goal is provenance, not academic formatting.
 
 ## When To Use High Vs Compact
@@ -269,11 +287,13 @@ Use **compact** for:
 - `> [!WARNING]` or another callout where the main mistake or tradeoff appears
 - `## Tradeoffs Or Decision Rules`
 - `## Related Notes`
-- `## Source` when provenance matters
+- `## Sources` when provenance matters
 
 ### Index Note Template
 - `# Index Title`
 - `> [!INFO] Start here`
+- `## Best Route By Audience`
+- one compact table covering `learner`, `builder`, and `data-strategy`
 - compact prerequisite block
 - `## Study Path`
 - one Mermaid study-path block
@@ -299,6 +319,7 @@ Use **compact** for:
 ## Style Change Log
 | Date | Change | Rationale |
 | :--- | :--- | :--- |
+| 2026-04-21 | Formalized `learner`, `builder`, and `data-strategy` as a first-class audience contract; made `Home` audience-first; required `Best Route By Audience` in major indexes; and standardized `## Sources` as the canonical provenance heading. | Make the vault easier to enter by role, turn `audience` into a real navigation interface, and keep editorial validation aligned with the body-section contract used across dashboards and notes. |
 | 2026-04-20 | Added `80 Knowledge Ops` as the operational layer for full-Karpathy workflows, extended metadata with `knowledge_state`, `review_state`, and `source_kind`, and formalized the `raw -> source -> workspace -> promotion` model. | Turn the vault into a supervised, agent-maintained knowledge system without replacing the curated curriculum and canonical branch structure. |
 | 2026-04-18 | Formalized the multi-agent operating contract for this vault, including default role patterns, ownership rules, validation expectations, and closure rules. | Make multi-agent work explicit and safe for large content, navigation, and research changes without turning every task into ad hoc coordination. |
 | 2026-04-18 | Allowed numbered subfolders inside large branches, formalized track-based organization within `05 Agentic Systems`, and clarified that indexes remain the primary navigation layer over physical folders. | Support deeper curriculum branches without letting a flat file layout or raw folder browsing become the main study path. |
@@ -307,4 +328,4 @@ Use **compact** for:
 | 2026-04-09 | Moved the vault to a high-visual authoring system for substantive and index notes; kept micro bridge notes compact; added Mermaid sizing policy and vertical-diagram preference. | Improve scanability in Obsidian while avoiding horizontal page scrolling and keeping bridge notes lightweight. |
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

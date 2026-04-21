@@ -48,7 +48,7 @@ This candidate packages the first `full Karpathy` ingest in the vault into a sou
 | [[Agentic Systems Index]] | branch patch | make the note visible from the specialization path |
 | [[010 Agentic Systems Sources and Research Log\|Agentic Systems Sources and Research Log]] | source patch | register the PDF and open-standard sources explicitly |
 
-## Evidence Base
+## Sources
 | Source | Role |
 | :--- | :--- |
 | [[2026-01-26 The Complete Guide to Building Skills for Claude\|The Complete Guide to Building Skills for Claude]] | main design, testing, and distribution playbook |

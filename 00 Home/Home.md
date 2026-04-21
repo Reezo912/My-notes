@@ -6,35 +6,49 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Home
 
-This is the main landing page for the vault. Use it to choose the right entry point, follow a study path, or jump directly into the branch that matters.
+This is the main landing page for the vault. Choose your route by audience first, then use the branch indexes as the main study and reference layer.
 
 > [!INFO] Start here
-> Use this page as the default portal for the vault. The four index notes below are the main navigation system after the foundations starter set.
+> `Home` is audience-first. Pick the route that matches your job, then move into the branch index that matches the problem.
 
-> [!IMPORTANT] Two navigation modes
-> The curriculum is hierarchical even if the indexes are all directly reachable from `Home`: a curated foundations starter set comes first, then the main study path runs through [[Data Preparation Index]], [[Machine Learning Index]], [[Deep Learning & NLP Index]], and [[Agentic Systems Index]]. Use the table below for direct entry by goal, not as a claim that all branches sit at the same depth.
+> [!IMPORTANT] Audience-first, curriculum underneath
+> The learning progression is still `foundations -> data preparation -> machine learning -> deep learning and NLP -> agentic systems`. The role-based routes below tell you where to enter that progression, not replace it.
+
+## Best Route By Audience
+| Audience | Best For | Start Here | Then Continue To |
+| :--- | :--- | :--- | :--- |
+| `Learner` | building shared vocabulary and following a guided path | [[Categorical Data]] and the curated foundations starter set | [[Data Preparation Index]] or [[Machine Learning Index]] -> [[Deep Learning & NLP Index]] -> [[Agentic Systems Index]] |
+| `Builder` | solving a concrete implementation, model, or systems problem | [[Data Preparation Index]] for data quality and preprocessing; [[Agentic Systems Index]] for tool-rich systems, coding agents, and applied architectures | [[Machine Learning Index]] or [[Deep Learning & NLP Index]] when you need model-family or LLM context |
+| `Data Strategy` | making decisions about readiness, investment, governance, or operating model | [[Data Preparation Index]] for data-readiness policy and quality debt; [[Agentic Systems Index]] for economics, governance, and operating-model questions | [[Machine Learning Index]] or [[Deep Learning & NLP Index]] when model tradeoffs or product shape need deeper support |
 
 ## Navigation Map
 ```mermaid
 flowchart TD
-    A["Home"] --> B["Foundations starter set"]
-    B --> C["Data Preparation Index"]
-    C --> D["Machine Learning Index"]
-    D --> E["Deep Learning & NLP Index"]
-    E --> F["Agentic Systems Index"]
-    A --> G["Vault Dashboard"]
+    A["Home"] --> B["Learner route"]
+    A --> C["Builder route"]
+    A --> D["Data Strategy route"]
+    B --> E["Foundations starter set"]
+    E --> F["Data Preparation Index"]
+    F --> G["Machine Learning Index"]
+    G --> H["Deep Learning & NLP Index"]
+    H --> I["Agentic Systems Index"]
+    C --> F
+    C --> I
+    D --> F
+    D --> I
+    A --> J["Vault Dashboard"]
 ```
 
 > [!IMPORTANT] Use indexes before browsing folders
 > The folders keep the vault tidy, but the index notes are the intended way to learn or navigate across topics.
 
-## Curated Foundations Entry
-> [!TIP] Start here first
-> Learners should usually build the shared vocabulary in `01 Foundations` before jumping into the main index branches. This keeps preprocessing, model choice, and agentic framing grounded in the same mental model.
+## Curated Foundations Starter
+> [!TIP] Shared vocabulary first
+> Learners should usually start here. Builders and `Data Strategy` readers can skim this block when they need a lighter refresher before choosing a branch.
 
 | First Note | Why It Comes First |
 | :--- | :--- |
@@ -45,13 +59,13 @@ flowchart TD
 | [[Selection Bias]] | sampling distortions and leakage risk |
 | [[Bias in Machine Learning]] | fairness and evaluation bias context |
 
-## Main Entry Points
+## Main Branches
 | Index | Best For | Start Here If |
 | :--- | :--- | :--- |
-| [[Data Preparation Index]] | upstream preprocessing branch | the main problem is missingness, encoding, scaling, or imbalance after the foundations starter set |
-| [[Machine Learning Index]] | broad ML overview | you want the main path from prepared data into model families, evaluation, and advanced systems after the foundations starter set |
-| [[Deep Learning & NLP Index]] | advanced modeling branch | you want the bridge from neural networks into sequence models, LLMs, and `RAG` after the broader ML path |
-| [[Agentic Systems Index]] | advanced systems branch | you want systems with tools, planning, memory, decision economics, multi-agent patterns, software engineering agents, harness design, operator playbooks for `Claude Code`, `Codex`, and `OpenCode`, knowledge and editorial agents, or applied architecture design across deeper internal tracks |
+| [[Data Preparation Index]] | upstream preprocessing branch | the main problem is missingness, encoding, scaling, imbalance, or data-readiness policy |
+| [[Machine Learning Index]] | broad ML overview | you want the central path from prepared data into model families, metrics, and advanced systems |
+| [[Deep Learning & NLP Index]] | advanced modeling branch | you want the bridge from neural networks into sequence models, language models, `RAG`, and LLM product context |
+| [[Agentic Systems Index]] | advanced systems branch | you want tools, planning, memory, decision economics, coding agents, operator playbooks, or applied architecture design |
 
 ## Operational Views
 | Dashboard | Use |
@@ -67,8 +81,8 @@ flowchart TD
 ### Study Mode
 - Start with the curated foundations entry, then follow one of the indexes and the suggested paths in order.
 
-> [!TIP] Quick routes by profile
-> Learners should usually start with the curated foundations entry, then move into [[Data Preparation Index]] or [[Machine Learning Index]] depending on the topic. Builders can jump into [[Data Preparation Index]] or [[Agentic Systems Index]] depending on whether the task is model-building, software engineering agents, harness design, `Claude Code`, `Codex`, or `OpenCode` operating setup, computer use, knowledge-base maintenance, or applied architecture work. `Data Strategy` readers should usually start with the curated foundations entry, then choose [[Data Preparation Index]] for data-readiness decisions or [[Agentic Systems Index]] for orchestration, operating-model, ROI, and compiled-knowledge decisions. Inside `Agentic Systems`, the branch is organized as a shared core plus two specializations: `Software Engineering Agents` and `Applied Agentic Architectures`. The operator-playbook layer lives inside the software-engineering specialization rather than as a separate top-level branch, and knowledge or editorial systems live inside the applied-architectures specialization. If you are operating the vault as a compounding knowledge system, use [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]] as the runtime layer, not as a replacement for the curriculum indexes.
+> [!TIP] `Knowledge Ops` stays operational
+> Use [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]] when you want to ingest sources, stage drafts, lint the workspace, or supervise promotion into canon. It is visible from `Home`, but it is not a fourth study route.
 
 ## Folder Map
 | Folder | Meaning |
@@ -86,4 +100,4 @@ flowchart TD
 - Related: [[Machine Learning Index]], [[Data Preparation Index]], [[Deep Learning & NLP Index]], [[Agentic Systems Index]], [[Vault Dashboard]], [[80 Knowledge Ops/010 Knowledge Ops|Knowledge Ops]], [[Note Style Guide]]
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21

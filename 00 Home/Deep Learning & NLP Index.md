@@ -6,7 +6,7 @@ audience:
   - builder
   - data-strategy
 status: evergreen
-last_reviewed: 2026-04-20
+last_reviewed: 2026-04-21
 ---
 # Deep Learning & NLP Index
 
@@ -26,6 +26,13 @@ This index organizes the vault for deep learning, sequence modeling, and modern 
 
 > [!TIP] Prerequisites
 > [[Neural Networks]] is the real entry note for this branch. [[Linear Models]] is useful earlier background if you are still moving through the broader curriculum. [[RAG (Retrieval Augmented Generation)]] becomes useful later, but it is not required until you want retrieval-aware LLM systems or agentic system variants that depend on external knowledge.
+
+## Best Route By Audience
+| Audience | Start Here | Do Not Start Here If | Then Go To |
+| :--- | :--- | :--- | :--- |
+| `Learner` | this index after [[Neural Networks]] when you want sequence models and language models in order | the ML baseline is still unclear or tabular model selection is unresolved | [[Language Models]], [[RAG (Retrieval Augmented Generation)]], and then [[Agentic Systems Index]] |
+| `Builder` | this index when you are building sequence, LLM, or retrieval-aware systems | the real bottleneck is still preprocessing debt or basic model-family choice | [[RAG (Retrieval Augmented Generation)]] and [[Agentic Systems Index]] |
+| `Data Strategy` | this index only when the data shape and product constraints justify sequence models, language models, or retrieval | a simpler tabular baseline has not been ruled out, or the main question is governance or operating model rather than model shape | [[Agentic Systems Index]] once the product case for LLM systems is real |
 
 ## Study Path
 ```mermaid
@@ -72,4 +79,4 @@ flowchart TD
 > Use [[80 Knowledge Ops/20 Domain Workspaces/04 Deep Learning & NLP/010 Deep Learning and NLP Knowledge Workspace|Deep Learning and NLP Knowledge Workspace]] when you are compiling sources, storing draft syntheses, or staging promotion candidates for this branch.
 
 ## Last Reviewed
-- 2026-04-20
+- 2026-04-21
