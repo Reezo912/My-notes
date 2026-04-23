@@ -5,7 +5,7 @@ audience:
   - learner
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-17
 ---
 # Categorical Data
 
@@ -53,7 +53,6 @@ flowchart TD
 > Ask two questions first: "Is there a true order?" and "How many unique values are there?" That already rules out many bad encoding choices.
 
 ## Related Notes
-- Prerequisites: [[Data Encoding]]
 - Related: [[Tree-based Models]], [[Linear Models]], [[Neural Networks]]
 
 ## Sources
@@ -61,4 +60,4 @@ flowchart TD
 - Zheng and Casari, *Feature Engineering for Machine Learning*.
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-17

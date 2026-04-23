@@ -20,7 +20,7 @@ The right regression metric depends on whether you care most about typical error
 ## Metric Map
 | Metric | What It Emphasizes | Best When | Main Risk |
 | :--- | :--- | :--- | :--- |
-| **RMSE** | large errors | large misses are costly, often under roughly [[Normal Distribution|Gaussian-like]] error assumptions | very sensitive to outliers |
+| **RMSE** | large errors | large misses are costly, often under roughly [[Normal Distribution\|Gaussian-like]] error assumptions | very sensitive to outliers |
 | **MAE** | typical absolute error | robust reporting is needed | downplays rare big failures |
 | **R-squared** | explained variance | high-level communication | easy to over-interpret |
 

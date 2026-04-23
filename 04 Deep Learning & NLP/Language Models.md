@@ -59,7 +59,7 @@ Language models only reason over a limited number of tokens at a time. That affe
 - how much history they can use
 - whether long documents must be chunked
 - whether systems like [[RAG (Retrieval Augmented Generation)]] are needed
-- whether systems like [[AI Agents]] add tools and control loops around the model
+- whether systems like [[020 AI Agents|AI Agents]] add tools and control loops around the model
 
 ## 4. When To Use / When Not To Use
 ### When To Use
@@ -77,7 +77,7 @@ Language models only reason over a limited number of tokens at a time. That affe
 
 ## Related Notes
 - Prerequisites: [[NLP]], [[Neural Networks]]
-- Related: [[LSTMs (Long Short-Term Memory)]], [[Attention]], [[RAG (Retrieval Augmented Generation)]], [[AI Agents]], [[Agentic Systems Index]]
+- Related: [[LSTMs (Long Short-Term Memory)]], [[Attention]], [[RAG (Retrieval Augmented Generation)]], [[020 AI Agents|AI Agents]], [[Agentic Systems Index]]
 
 ## Sources
 - Bengio et al., *A Neural Probabilistic Language Model*.

@@ -11,10 +11,14 @@
             "id": "c8ba7741173a89c0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "040 CI, Pull Requests, and Human Review for Coding Agents"
             }
           }
         ]
@@ -108,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de 040 CI, Pull Requests, and Human Review for Coding Agents"
             }
           },
           {
@@ -121,12 +126,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de 040 CI, Pull Requests, and Human Review for Coding Agents"
             }
           },
           {
@@ -190,44 +196,45 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c8ba7741173a89c0",
+  "active": "4b2e94b0bccceebb",
   "lastOpenFiles": [
-    "05 Agentic Systems/10 Software Engineering Agents/010 Software Engineering Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/080 Operating Coding Agents in Teams.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/070 Long-Running and Background Coding Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/060 Building Coding Agent Harnesses.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/050 Evaluating Software Engineering Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/030 Approvals, Permissions, and Sandboxing for Coding Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/020 Repo Operating Model for Coding Agents.md",
-    "05 Agentic Systems/90 Research and Roadmap/010 Agentic Systems Sources and Research Log.md",
-    "Agentic Systems Sources and Research Log.md",
-    "Sin título.canvas",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/090 Operating Agentic Coding Environments.md",
-    "05 Agentic Systems/10 Software Engineering Agents/115 OpenCode Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/170 Eval Hygiene for Agentic Coding Systems.md",
+    "90 Guides/Editorial Dashboard.md",
+    "AGENTS.md",
+    "README.md",
+    "05 Agentic Systems/20 Applied Agentic Architectures/030 Human-in-the-Loop and Approval Flows.md",
+    "05 Agentic Systems/20 Applied Agentic Architectures/010 Applied Agentic Architectures.md",
+    "80 Knowledge Ops/030 Karpathy Knowledge Base Starter Template.md",
     "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/160 Tool Design and MCP Integration in Practice.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/150 Parallel Sessions, Worktrees, and Multi-Agent Workflows.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/140 Context Engineering and Session Hygiene for Coding Agents.md",
+    "05 Agentic Systems/00 Core/040 MCP and Connector Protocols.md",
+    "05 Agentic Systems/00 Core/030 Tool Use and Environment Interaction.md",
+    "05 Agentic Systems/00 Core/025 Knowledge Compilation vs RAG.md",
+    "05 Agentic Systems/00 Core/020 AI Agents.md",
+    "04 Deep Learning & NLP/RAG (Retrieval Augmented Generation).md",
+    "00 Home/Agentic Systems Index.md",
+    "00 Home/Data Preparation Index.md",
+    "00 Home/Home.md",
+    "00 Home/Machine Learning Index.md",
+    "00 Home/Vault Catalog.base",
+    "05 Agentic Systems/00 Core/010 When to Use Agentic Systems.md",
+    "01 Foundations/Selection Bias.md",
+    "01 Foundations/Bias in Machine Learning.md",
     "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/130 Skills, Commands, and Hooks in Practice.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/120 Writing Effective CLAUDE and AGENTS Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/115 OpenCode Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/110 Codex Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/100 Claude Code Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks",
-    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems",
-    "05 Agentic Systems/10 Software Engineering Agents/110 Codex Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/100 Claude Code Setup and Repo Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/050 Evaluating Software Engineering Agents.md",
-    "05 Agentic Systems/10 Software Engineering Agents/120 Writing Effective CLAUDE and AGENTS Contracts.md",
-    "05 Agentic Systems/10 Software Engineering Agents/170 Eval Hygiene for Agentic Coding Systems.md",
-    "05 Agentic Systems/90 Research and Roadmap",
-    "05 Agentic Systems/20 Applied Agentic Architectures",
-    "05 Agentic Systems/10 Software Engineering Agents",
-    "05 Agentic Systems/00 Core",
-    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png",
-    "vault_catalog.csv",
+    "80 Knowledge Ops/10 Source Notes/010 Source Notes Index.md",
+    "90 Guides/Note Style Guide.md",
     "90 Guides/Editorial Review.base",
-    "00 Home/Vault Catalog.base"
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/100 Claude Code Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/20 Operator Playbooks/110 Codex Setup and Repo Contracts.md",
+    "05 Agentic Systems/10 Software Engineering Agents/10 Coding Agent Systems/040 CI, Pull Requests, and Human Review for Coding Agents.md",
+    "05 Agentic Systems/00 Core/050 Tool Ecosystems and Harness Engineering.md",
+    "80 Knowledge Ops/00 Intake/raw/The-Complete-Guide-to-Building-Skill-for-Claude.pdf",
+    "80 Knowledge Ops/90 Dashboards/Lint Review.base",
+    "80 Knowledge Ops/90 Dashboards/Promotion Queue.base",
+    "80 Knowledge Ops/90 Dashboards/Source Intake.base",
+    "80 Knowledge Ops/20 Domain Workspaces/05 Agentic Systems",
+    "80 Knowledge Ops/20 Domain Workspaces/04 Deep Learning & NLP",
+    "80 Knowledge Ops/20 Domain Workspaces/03 Classical ML",
+    "80 Knowledge Ops/20 Domain Workspaces/02 Data Preparation",
+    "Sin título.canvas",
+    "images/Captura de pantalla 2025-12-10 a las 13.30.51.png"
   ]
 }

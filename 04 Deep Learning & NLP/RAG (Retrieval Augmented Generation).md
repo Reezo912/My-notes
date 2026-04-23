@@ -80,7 +80,7 @@ flowchart TD
 
 ## Related Notes
 - Prerequisites: [[Language Models]], [[Attention]]
-- Related: [[NLP]], [[AI Agents]], [[Memory in Agent Systems]], [[Agentic Systems Index]]
+- Related: [[NLP]], [[020 AI Agents|AI Agents]], [[070 Memory in Agent Systems|Memory in Agent Systems]], [[Agentic Systems Index]]
 
 ## Sources
 - Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*.

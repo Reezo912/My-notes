@@ -10,7 +10,7 @@ aliases:
 status: evergreen
 last_reviewed: 2026-04-20
 ---
-# Knowledge Compilation vs RAG
+ # Knowledge Compilation vs RAG
 
 Knowledge compilation and `RAG` solve related but different problems. `RAG` retrieves raw evidence at query time, while knowledge compilation turns repeated reading and synthesis into a maintained artifact that can be queried, reviewed, and improved over time.
 

@@ -5,7 +5,7 @@ audience:
   - learner
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-17
 ---
 # Types of Missing Data
 
@@ -49,12 +49,11 @@ flowchart TD
 > If you are unsure and missingness looks behavior-driven or sensitive, investigate before you impute aggressively.
 
 ## Related Notes
-- Prerequisites: [[Data Imputation]]
-- Related: [[Selection Bias]], [[Bias in Machine Learning]]
+- Related: [[Data Imputation]], [[Selection Bias]], [[Bias in Machine Learning]]
 
 ## Sources
 - Rubin, *Inference and Missing Data*.
 - Little and Rubin, *Statistical Analysis with Missing Data*.
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-17

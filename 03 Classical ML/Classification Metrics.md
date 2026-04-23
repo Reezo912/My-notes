@@ -5,7 +5,7 @@ audience:
   - learner
   - builder
 status: evergreen
-last_reviewed: 2026-04-10
+last_reviewed: 2026-04-17
 ---
 # Classification Metrics
 
@@ -84,8 +84,7 @@ Everything starts from the confusion matrix:
 > For rare-event classification, start by reporting Precision, Recall, and PR-AUC. Then add Accuracy or ROC-AUC only as supporting context.
 
 ## Related Notes
-- Prerequisites: [[Imbalanced Datasets]]
-- Related: [[Bias in Machine Learning]], [[Linear Models]], [[Tree-based Models]]
+- Related: [[Imbalanced Datasets]], [[Bias in Machine Learning]], [[Linear Models]], [[Tree-based Models]]
 
 ## Example
 ```python
@@ -114,4 +113,4 @@ print("pr_auc", average_precision_score(y_test, y_prob))
 - Saito and Rehmsmeier, *The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets*.
 
 ## Last Reviewed
-- 2026-04-10
+- 2026-04-17
